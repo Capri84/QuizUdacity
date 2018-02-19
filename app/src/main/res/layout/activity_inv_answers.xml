@@ -1,0 +1,599 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.android.newyearquiz.MainActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/inv_back"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/inventions_header"
+                style="@style/inventions_header"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/inv_quiz_answers" />
+
+            <TextView
+                android:id="@+id/inv_question1_number"
+                style="@style/inventions_question_number"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/inv_q1_question"
+                    style="@style/inventions_questions"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.5"
+                    android:text="@string/inv_q_1" />
+
+                <LinearLayout
+                    style="@style/inventions_answers"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.5"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/inv_q1_player_answer"
+                        style="@style/inventions_tv_answers"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/yourAnswer" />
+
+                    <View
+                        style="@style/inv_view_margins"
+                        android:layout_width="match_parent" />
+
+                    <TextView
+                        android:id="@+id/inv_q1_correct_answer"
+                        style="@style/inventions_tv_answers"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/invCorrectAnswer" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/inv_q1_comment"
+                style="@style/inventions_comment"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/inv_q1_info" />
+
+            <View
+                style="@style/inv_view_margins"
+                android:layout_width="match_parent" />
+
+            <TextView
+                android:id="@+id/inv_question2_number"
+                style="@style/inventions_question_number"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/inv_q2_question"
+                    style="@style/inventions_questions"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.5"
+                    android:text="@string/inv_q_2" />
+
+                <LinearLayout
+                    style="@style/inventions_answers"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.5"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/inv_q2_player_answer"
+                        style="@style/inventions_tv_answers"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/yourAnswer" />
+
+                    <View
+                        style="@style/inv_view_margins"
+                        android:layout_width="match_parent" />
+
+                    <TextView
+                        android:id="@+id/inv_q2_correct_answer"
+                        style="@style/inventions_tv_answers"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/invCorrectAnswer" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/inv_q2_comment"
+                style="@style/inventions_comment"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/inv_q2_info" />
+
+            <View
+                style="@style/inv_view_margins"
+                android:layout_width="match_parent" />
+
+            <TextView
+                android:id="@+id/inv_question3_number"
+                style="@style/inventions_question_number"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/inv_q3_question"
+                    style="@style/inventions_questions"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.5"
+                    android:text="@string/inv_q_3" />
+
+                <LinearLayout
+                    style="@style/inventions_answers"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.5"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/inv_q3_player_answer"
+                        style="@style/inventions_tv_answers"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/yourAnswer" />
+
+                    <View
+                        style="@style/inv_view_margins"
+                        android:layout_width="match_parent" />
+
+                    <TextView
+                        android:id="@+id/inv_q3_correct_answer"
+                        style="@style/inventions_tv_answers"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/invCorrectAnswer" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/inv_q3_comment"
+                style="@style/inventions_comment"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/inv_q3_info" />
+
+            <View
+                style="@style/inv_view_margins"
+                android:layout_width="match_parent" />
+
+            <TextView
+                android:id="@+id/inv_question4_number"
+                style="@style/inventions_question_number"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/inv_q4_question"
+                    style="@style/inventions_questions"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.5"
+                    android:text="@string/inv_q_4" />
+
+                <LinearLayout
+                    style="@style/inventions_answers"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.5"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/inv_q4_player_answer"
+                        style="@style/inventions_tv_answers"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/yourAnswer" />
+
+                    <View
+                        style="@style/inv_view_margins"
+                        android:layout_width="match_parent" />
+
+                    <TextView
+                        android:id="@+id/inv_q4_correct_answer"
+                        style="@style/inventions_tv_answers"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/invCorrectAnswer" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/inv_q4_comment"
+                style="@style/inventions_comment"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/inv_q4_info" />
+
+            <View
+                style="@style/inv_view_margins"
+                android:layout_width="match_parent" />
+
+            <TextView
+                android:id="@+id/inv_question5_number"
+                style="@style/inventions_question_number"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/inv_q5_question"
+                    style="@style/inventions_questions"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.5"
+                    android:text="@string/inv_q_5" />
+
+                <LinearLayout
+                    style="@style/inventions_answers"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.5"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/inv_q5_player_answer"
+                        style="@style/inventions_tv_answers"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/yourAnswer" />
+
+                    <View
+                        style="@style/inv_view_margins"
+                        android:layout_width="match_parent" />
+
+                    <TextView
+                        android:id="@+id/inv_q5_correct_answer"
+                        style="@style/inventions_tv_answers"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/invCorrectAnswer" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/inv_q5_comment"
+                style="@style/inventions_comment"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/inv_q5_info" />
+
+            <View
+                style="@style/inv_view_margins"
+                android:layout_width="match_parent" />
+
+            <TextView
+                android:id="@+id/inv_question6_number"
+                style="@style/inventions_question_number"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/inv_q6_question"
+                    style="@style/inventions_questions"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.5"
+                    android:text="@string/inv_q_6" />
+
+                <LinearLayout
+                    style="@style/inventions_answers"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.5"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/inv_q6_player_answer"
+                        style="@style/inventions_tv_answers"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/yourAnswer" />
+
+                    <View
+                        style="@style/inv_view_margins"
+                        android:layout_width="match_parent" />
+
+                    <TextView
+                        android:id="@+id/inv_q6_correct_answer"
+                        style="@style/inventions_tv_answers"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/invCorrectAnswer" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/inv_q6_comment"
+                style="@style/inventions_comment"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/inv_q6_info" />
+
+            <View
+                style="@style/inv_view_margins"
+                android:layout_width="match_parent" />
+
+            <TextView
+                android:id="@+id/inv_question7_number"
+                style="@style/inventions_question_number"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/inv_q7_question"
+                    style="@style/inventions_questions"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.5"
+                    android:text="@string/inv_q_7" />
+
+                <LinearLayout
+                    style="@style/inventions_answers"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.5"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/inv_q7_player_answer"
+                        style="@style/inventions_tv_answers"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/yourAnswer" />
+
+                    <View
+                        style="@style/inv_view_margins"
+                        android:layout_width="match_parent" />
+
+                    <TextView
+                        android:id="@+id/inv_q7_correct_answer"
+                        style="@style/inventions_tv_answers"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/invCorrectAnswer" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/inv_q7_comment"
+                style="@style/inventions_comment"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/inv_q7_info" />
+
+            <View
+                style="@style/inv_view_margins"
+                android:layout_width="match_parent" />
+
+            <TextView
+                android:id="@+id/inv_question8_number"
+                style="@style/inventions_question_number"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/inv_q8_question"
+                    style="@style/inventions_questions"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.5"
+                    android:text="@string/inv_q_8" />
+
+                <LinearLayout
+                    style="@style/inventions_answers"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.5"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/inv_q8_player_answer"
+                        style="@style/inventions_tv_answers"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/yourAnswer" />
+
+                    <View
+                        style="@style/inv_view_margins"
+                        android:layout_width="match_parent" />
+
+                    <TextView
+                        android:id="@+id/inv_q8_correct_answer"
+                        style="@style/inventions_tv_answers"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/invCorrectAnswer" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/inv_q8_comment"
+                style="@style/inventions_comment"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/inv_q8_info" />
+
+            <View
+                style="@style/inv_view_margins"
+                android:layout_width="match_parent" />
+
+            <TextView
+                android:id="@+id/inv_question9_number"
+                style="@style/inventions_question_number"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/inv_q9_question"
+                    style="@style/inventions_questions"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.5"
+                    android:text="@string/inv_q_9" />
+
+                <LinearLayout
+                    style="@style/inventions_answers"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.5"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/inv_q9_player_answer"
+                        style="@style/inventions_tv_answers"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/yourAnswer" />
+
+                    <View
+                        style="@style/inv_view_margins"
+                        android:layout_width="match_parent" />
+
+                    <TextView
+                        android:id="@+id/inv_q9_correct_answer"
+                        style="@style/inventions_tv_answers"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/invCorrectAnswer" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/inv_q9_comment"
+                style="@style/inventions_comment"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/inv_q9_info" />
+
+            <View
+                style="@style/inv_view_margins"
+                android:layout_width="match_parent" />
+
+            <TextView
+                android:id="@+id/inv_question10_number"
+                style="@style/inventions_question_number"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/inv_q10_question"
+                    style="@style/inventions_questions"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.5"
+                    android:text="@string/inv_q_10" />
+
+                <LinearLayout
+                    style="@style/inventions_answers"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.5"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/inv_q10_player_answer"
+                        style="@style/inventions_tv_answers"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/yourAnswer" />
+
+                    <View
+                        style="@style/inv_view_margins"
+                        android:layout_width="match_parent" />
+
+                    <TextView
+                        android:id="@+id/inv_q10_correct_answer"
+                        style="@style/inventions_tv_answers"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/invCorrectAnswer" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/inv_q10_comment"
+                style="@style/inventions_comment"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/inv_q10_info" />
+
+            <Button
+                android:id="@+id/button_to_main"
+                style="@style/inventions_buttons"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="@string/main_screen" />
+        </LinearLayout>
+    </ScrollView>
+</layout>

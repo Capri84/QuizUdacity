@@ -1,0 +1,522 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.android.newyearquiz.MainActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/inv_back"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/inventions_header"
+                style="@style/inventions_header"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/inventions_quiz" />
+
+            <TextView
+                android:id="@+id/inv_question1_number"
+                style="@style/inventions_question_number"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/inv_q1_question"
+                style="@style/inventions_questions"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/inv_q_1" />
+
+            <RadioGroup
+                android:id="@+id/radio_group1"
+                style="@style/inventions_rb"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <RadioButton
+                    android:id="@+id/answer1_1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/inv_q1_var_1" />
+
+                <RadioButton
+                    android:id="@+id/answer1_2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/inv_q1_var_2" />
+
+                <RadioButton
+                    android:id="@+id/answer1_3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/inv_q1_var_3" />
+
+                <RadioButton
+                    android:id="@+id/answer1_4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/inv_q1_var_4" />
+            </RadioGroup>
+
+            <View
+                style="@style/inv_view_margins"
+                android:layout_width="match_parent" />
+
+            <TextView
+                android:id="@+id/inv_question2_number"
+                style="@style/inventions_question_number"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/inv_q2_question"
+                style="@style/inventions_questions"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/inv_q_2" />
+
+            <RadioGroup
+                android:id="@+id/radio_group2"
+                style="@style/inventions_rb"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <RadioButton
+                    android:id="@+id/answer2_1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/inv_q2_var_1" />
+
+                <RadioButton
+                    android:id="@+id/answer2_2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/inv_q2_var_2" />
+
+                <RadioButton
+                    android:id="@+id/answer2_3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/inv_q2_var_3" />
+
+                <RadioButton
+                    android:id="@+id/answer2_4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/inv_q2_var_4" />
+            </RadioGroup>
+
+            <View
+                style="@style/inv_view_margins"
+                android:layout_width="match_parent" />
+
+            <TextView
+                android:id="@+id/inv_question3_number"
+                style="@style/inventions_question_number"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/inv_q3_question"
+                style="@style/inventions_questions"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/inv_q_3" />
+
+            <RadioGroup
+                android:id="@+id/radio_group3"
+                style="@style/inventions_rb"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <RadioButton
+                    android:id="@+id/answer3_1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/inv_q3_var_1" />
+
+                <RadioButton
+                    android:id="@+id/answer3_2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/inv_q3_var_2" />
+
+                <RadioButton
+                    android:id="@+id/answer3_3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/inv_q3_var_3" />
+
+                <RadioButton
+                    android:id="@+id/answer3_4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/inv_q3_var_4" />
+            </RadioGroup>
+
+            <View
+                style="@style/inv_view_margins"
+                android:layout_width="match_parent" />
+
+            <TextView
+                android:id="@+id/inv_question4_number"
+                style="@style/inventions_question_number"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/inv_q4_question"
+                style="@style/inventions_questions"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/inv_q_4" />
+
+            <RadioGroup
+                android:id="@+id/radio_group4"
+                style="@style/inventions_rb"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <RadioButton
+                    android:id="@+id/answer4_1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/inv_q4_var_1" />
+
+                <RadioButton
+                    android:id="@+id/answer4_2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/inv_q4_var_2" />
+
+                <RadioButton
+                    android:id="@+id/answer4_3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/inv_q4_var_3" />
+
+                <RadioButton
+                    android:id="@+id/answer4_4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/inv_q4_var_4" />
+            </RadioGroup>
+
+            <View
+                style="@style/inv_view_margins"
+                android:layout_width="match_parent" />
+
+            <TextView
+                android:id="@+id/inv_question5_number"
+                style="@style/inventions_question_number"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/inv_q5_question"
+                style="@style/inventions_questions"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/inv_q_5" />
+
+            <RadioGroup
+                android:id="@+id/radio_group5"
+                style="@style/inventions_rb"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <RadioButton
+                    android:id="@+id/answer5_1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/inv_q5_var_1" />
+
+                <RadioButton
+                    android:id="@+id/answer5_2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/inv_q5_var_2" />
+
+                <RadioButton
+                    android:id="@+id/answer5_3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/inv_q5_var_3" />
+
+                <RadioButton
+                    android:id="@+id/answer5_4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/inv_q5_var_4" />
+            </RadioGroup>
+
+            <View
+                style="@style/inv_view_margins"
+                android:layout_width="match_parent" />
+
+            <TextView
+                android:id="@+id/inv_question6_number"
+                style="@style/inventions_question_number"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/inv_q6_question"
+                style="@style/inventions_questions"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/inv_q_6" />
+
+            <RadioGroup
+                android:id="@+id/radio_group6"
+                style="@style/inventions_rb"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <RadioButton
+                    android:id="@+id/answer6_1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/inv_q6_var_1" />
+
+                <RadioButton
+                    android:id="@+id/answer6_2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/inv_q6_var_2" />
+
+                <RadioButton
+                    android:id="@+id/answer6_3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/inv_q6_var_3" />
+
+                <RadioButton
+                    android:id="@+id/answer6_4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/inv_q6_var_4" />
+            </RadioGroup>
+
+            <View
+                style="@style/inv_view_margins"
+                android:layout_width="match_parent" />
+
+            <TextView
+                android:id="@+id/inv_question7_number"
+                style="@style/inventions_question_number"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/inv_q7_question"
+                style="@style/inventions_questions"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/inv_q_7" />
+
+            <RadioGroup
+                android:id="@+id/radio_group7"
+                style="@style/inventions_rb"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <RadioButton
+                    android:id="@+id/answer7_1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/inv_q7_var_1" />
+
+                <RadioButton
+                    android:id="@+id/answer7_2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/inv_q7_var_2" />
+
+                <RadioButton
+                    android:id="@+id/answer7_3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/inv_q7_var_3" />
+
+                <RadioButton
+                    android:id="@+id/answer7_4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/inv_q7_var_4" />
+            </RadioGroup>
+
+            <View
+                style="@style/inv_view_margins"
+                android:layout_width="match_parent" />
+
+            <TextView
+                android:id="@+id/inv_question8_number"
+                style="@style/inventions_question_number"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/inv_q8_question"
+                style="@style/inventions_questions"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/inv_q_8" />
+
+            <RadioGroup
+                android:id="@+id/radio_group8"
+                style="@style/inventions_rb"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <RadioButton
+                    android:id="@+id/answer8_1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/inv_q8_var_1" />
+
+                <RadioButton
+                    android:id="@+id/answer8_2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/inv_q8_var_2" />
+
+                <RadioButton
+                    android:id="@+id/answer8_3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/inv_q8_var_3" />
+
+                <RadioButton
+                    android:id="@+id/answer8_4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/inv_q8_var_4" />
+            </RadioGroup>
+
+            <View
+                style="@style/inv_view_margins"
+                android:layout_width="match_parent" />
+
+            <TextView
+                android:id="@+id/inv_question9_number"
+                style="@style/inventions_question_number"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/inv_q9_question"
+                style="@style/inventions_questions"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/inv_q_9" />
+
+            <EditText
+                android:id="@+id/inv_answer9"
+                style="@style/name_field_margins"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="bottom|center_horizontal"
+                android:hint="@string/inv9_hint"
+                android:inputType="number"
+                android:textStyle="italic" />
+
+            <View
+                style="@style/inv_view_margins"
+                android:layout_width="match_parent" />
+
+            <TextView
+                android:id="@+id/inv_question10_number"
+                style="@style/inventions_question_number"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/inv_q10_question"
+                style="@style/inventions_questions"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/inv_q_10" />
+
+            <LinearLayout
+                style="@style/inventions_rb"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <CheckBox
+                    android:id="@+id/checkbox1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/inv_q10_var_1" />
+
+                <CheckBox
+                    android:id="@+id/checkbox2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/inv_q10_var_2" />
+
+                <CheckBox
+                    android:id="@+id/checkbox3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/inv_q10_var_3" />
+
+                <CheckBox
+                    android:id="@+id/checkbox4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/inv_q10_var_4" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/answers_button"
+                    style="@style/inventions_buttons"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/answers"
+                    android:visibility="invisible" />
+
+                <Button
+                    android:id="@+id/submit_button"
+                    style="@style/inventions_buttons"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/submit_button" />
+
+                <Button
+                    android:id="@+id/share_button"
+                    style="@style/inventions_buttons"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/share"
+                    android:visibility="invisible" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</layout>

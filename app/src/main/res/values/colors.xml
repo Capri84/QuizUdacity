@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#C6B397</color>
+    <color name="button_background">#60ffffff</color>
+    <color name="questions_color">#998F7A</color>
+    <color name="wrong_answer_color">#E65F64</color>
+    <color name="correct_answer_color">#7CB07A</color>
+    <color name="em_background">#F6E9C4</color>
+    <color name="em_header_color">#DB6374</color>
+    <color name="ny_background">#f8e2c3</color>
+    <color name="ny_Accent">#603935</color>
+    <color name="ny_image_background">#f0e9dd</color>
+    <color name="inv_borders1">#CF4A59</color>
+    <color name="inv_back">#CBDAED</color>
+    <color name="inv_view">#87AED3</color>
+</resources>

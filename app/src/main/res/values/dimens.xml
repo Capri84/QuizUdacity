@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="layout_margin1">48dp</dimen>
+    <dimen name="layout_margin2">62dp</dimen>
+    <dimen name="layout_margin3">16dp</dimen>
+    <dimen name="layout_margin4">24dp</dimen>
+    <dimen name="layout_margin5">100dp</dimen>
+    <dimen name="padding1">8dp</dimen>
+    <dimen name="padding2">4dp</dimen>
+    <dimen name="text_size">24sp</dimen>
+    <dimen name="text_size2">16sp</dimen>
+    <dimen name="border">2dp</dimen>
+    <dimen name="inv_quiz_text_size">28sp</dimen>
+    <dimen name="view_height">1dp</dimen>
+</resources>
