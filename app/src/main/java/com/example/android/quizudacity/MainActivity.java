@@ -26,7 +26,7 @@ public class MainActivity extends AppCompatActivity {
         } else {
             openInventionsQuizIntent.putExtra(EXTRA_MESSAGE, message);
             startActivity(openInventionsQuizIntent);
-            this.finish();
+            finish();
         }
     }
 }

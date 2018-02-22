@@ -4,13 +4,13 @@
     <string name="players_name_hint">Enter your name</string>
     <string name="quest_9_hint">1770/1911/1824/1947</string>
     <string name="no_name">Please, enter your name!</string>
-    <string name="name_summary">Congratulations, </string>
+    <string name="name_summary">Congratulations,</string>
     <string name="well_done">Well done!</string>
-    <string name="results">Here are your results: </string>
-    <string name="total_correct"> correct answers out of </string>
-    <string name="total_incorrect"> wrong answers out of </string>
-    <string name="question">Question </string>
-    <string name="out_of"> out of </string>
+    <string name="results">Here are your results:</string>
+    <string name="total_correct">correct answers</string>
+    <string name="total_incorrect">wrong answers</string>
+    <string name="question">Question</string>
+    <string name="out_of">out of</string>
     <string name="not_chosen">Please, answer at least one question to proceed</string>
     <string name="inventions_quiz">Inventions Quiz</string>
     <string name="inv_quiz_answers">Answers and comments</string>
@@ -18,8 +18,8 @@
     <string name="main_screen">Home</string>
     <string name="share">Share</string>
     <string name="answers">Answers</string>
-    <string name="your_answer">Your answer: </string>
-    <string name="inv_correct_answer">Correct answer: </string>
+    <string name="your_answer">Your answer:</string>
+    <string name="inv_correct_answer">Correct answer:</string>
     <string name="not_answered">Not answered</string>
 
     <!--Inventions Quiz: Questions-->

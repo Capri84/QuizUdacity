@@ -15,22 +15,18 @@ import com.example.android.quizudacity.databinding.ActivityInventionsBinding;
 public class InventionsActivity extends AppCompatActivity implements View.OnClickListener {
     ActivityInventionsBinding activityInventionsBinding;
 
-    // Number of the current question
-    int currentQuestion = 1;
     // Total number of questions
-    int totalNumberOfQuestions = 10;
+    static final int TOTAL_QUESTIONS_COUNT = 10;
     // Correct answers counter
     int correctScore = 0;
     // Incorrect answers counter
     int incorrectScore = 0;
-    // Here we declare a variable to store the question number
-    TextView questionNumber;
     // Here we declare a variable to store player's name
     String name;
     // Here we declare a variable for the quiz results toast
     String resultMessage;
     // Here we declare a variable to store a string "Question (current question number) out of (total number of questions)"
-    String qNum, answer9, answer10;
+    String answer9, answer10;
     // This is an array of id's of question numbers
     int[] questionNumbers = {R.id.tv_question1_number, R.id.tv_question2_number, R.id.tv_question3_number, R.id.tv_question4_number, R.id.tv_question5_number,
             R.id.tv_question6_number, R.id.tv_question7_number, R.id.tv_question8_number, R.id.tv_question9_number, R.id.tv_question10_number};
@@ -53,12 +49,13 @@ public class InventionsActivity extends AppCompatActivity implements View.OnClic
     }
 
     // This method sets numbers to the questions
-    public void setQuestionNumbers() {
-        for (int j = 0; j < questionNumbers.length; j++) {
-            questionNumber = findViewById(questionNumbers[j]);
-            qNum = getString(R.string.question) + currentQuestion + getString(R.string.out_of) + totalNumberOfQuestions;
-            questionNumber.setText(qNum);
-            currentQuestion++;
+    private void setQuestionNumbers() {
+        int numberOfQuestion = 1;
+        for (int i = 0; i < TOTAL_QUESTIONS_COUNT; i++) {
+            String caption = getString(R.string.question) + " " + numberOfQuestion + " "
+                    + getString(R.string.out_of) + " " + TOTAL_QUESTIONS_COUNT;
+            ((TextView) findViewById(questionNumbers[i])).setText(caption);
+            numberOfQuestion++;
         }
     }
 
@@ -82,11 +79,7 @@ public class InventionsActivity extends AppCompatActivity implements View.OnClic
         correctScore = 0;
         incorrectScore = 0;
         answer10 = "";
-        if (activityInventionsBinding.rgQ1Variants.getCheckedRadioButtonId() == -1 && activityInventionsBinding.rgQ2Variants.getCheckedRadioButtonId() == -1 &&
-                activityInventionsBinding.rgQ3Variants.getCheckedRadioButtonId() == -1 && activityInventionsBinding.rgQ4Variants.getCheckedRadioButtonId() == -1 &&
-                activityInventionsBinding.rgQ5Variants.getCheckedRadioButtonId() == -1 && activityInventionsBinding.rgQ6Variants.getCheckedRadioButtonId() == -1 &&
-                activityInventionsBinding.rgQ7Variants.getCheckedRadioButtonId() == -1 && activityInventionsBinding.rgQ8Variants.getCheckedRadioButtonId() == -1 &&
-                activityInventionsBinding.etAnswer9.getText().toString().trim().equals("") && (!activityInventionsBinding.cbkAnswer1.isChecked() && !activityInventionsBinding.cbkAnswer2.isChecked() && !activityInventionsBinding.cbkAnswer3.isChecked() && !activityInventionsBinding.cbkAnswer4.isChecked())) {
+        if (isAllFilled()) {
             Toast.makeText(this, R.string.not_chosen, Toast.LENGTH_SHORT).show();
         } else {
             activityInventionsBinding.btnAnswersButton.setVisibility(View.VISIBLE);
@@ -138,16 +131,33 @@ public class InventionsActivity extends AppCompatActivity implements View.OnClic
             }
             Intent openInventionsQuizIntent = getIntent();
             name = openInventionsQuizIntent.getStringExtra(MainActivity.EXTRA_MESSAGE);
-            String resultMessage = createQuizSummary(name, correctScore, incorrectScore, totalNumberOfQuestions);
+            String resultMessage = createQuizSummary(name, correctScore, incorrectScore, TOTAL_QUESTIONS_COUNT);
             Toast.makeText(getApplicationContext(), resultMessage, Toast.LENGTH_LONG).show();
         }
     }
 
+    //This method checks whether at least one answer is selected in at least one question.
+    private boolean isAllFilled() {
+        return activityInventionsBinding.rgQ1Variants.getCheckedRadioButtonId() == -1 &&
+                activityInventionsBinding.rgQ2Variants.getCheckedRadioButtonId() == -1 &&
+                activityInventionsBinding.rgQ3Variants.getCheckedRadioButtonId() == -1 &&
+                activityInventionsBinding.rgQ4Variants.getCheckedRadioButtonId() == -1 &&
+                activityInventionsBinding.rgQ5Variants.getCheckedRadioButtonId() == -1 &&
+                activityInventionsBinding.rgQ6Variants.getCheckedRadioButtonId() == -1 &&
+                activityInventionsBinding.rgQ7Variants.getCheckedRadioButtonId() == -1 &&
+                activityInventionsBinding.rgQ8Variants.getCheckedRadioButtonId() == -1 &&
+                activityInventionsBinding.etAnswer9.getText().toString().trim().equals("") &&
+                (!activityInventionsBinding.cbkAnswer1.isChecked() &&
+                        !activityInventionsBinding.cbkAnswer2.isChecked() &&
+                        !activityInventionsBinding.cbkAnswer3.isChecked() &&
+                        !activityInventionsBinding.cbkAnswer4.isChecked());
+    }
+
     // This method creates Quiz summary.
     private String createQuizSummary(String name, int correctScore, int incorrectScore, int totalNumberOfQuestions) {
-        resultMessage = getString(R.string.name_summary) + name + "!" + "\n" + getString(R.string.well_done) +
-                "\n" + getString(R.string.results) + "\n" + correctScore + getString(R.string.total_correct) + totalNumberOfQuestions + "!" +
-                "\n" + incorrectScore + getString(R.string.total_incorrect) + totalNumberOfQuestions + "!";
+        resultMessage = getString(R.string.name_summary) + " " + name + "!" + "\n" + getString(R.string.well_done) +
+                "\n" + getString(R.string.results) + "\n" + correctScore + " " + getString(R.string.total_correct) + " " + getString(R.string.out_of) + " " + totalNumberOfQuestions + "!" +
+                "\n" + incorrectScore + " " + getString(R.string.total_incorrect) + " " + getString(R.string.out_of) + " " + totalNumberOfQuestions + "!";
         return resultMessage;
     }
 
@@ -170,12 +180,5 @@ public class InventionsActivity extends AppCompatActivity implements View.OnClic
         if (intent.resolveActivity(getPackageManager()) != null) {
             startActivity(intent);
         }
-    }
-
-    // This method is called by clicking on Back button. It returns the user to the Main screen and kills this activity.
-    @Override
-    public void onBackPressed() {
-        startActivity(new Intent(this, MainActivity.class));
-        this.finish();
     }
 }

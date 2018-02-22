@@ -8,14 +8,12 @@ import android.widget.Button;
 import android.widget.TextView;
 
 public class InvAnswersActivity extends AppCompatActivity implements View.OnClickListener {
-    // Number of the current question
-    int currentQuestion = 1;
     // Total number of questions
-    int totalNumberOfQuestions = 10;
+    private final int TOTAL_QUESTIONS_COUNT = 10;
     // Here we declare variables to store question number, player's answer, correct answer
-    TextView questionNumber, playerAnswerTv, correctAnswerTv;
+    TextView playerAnswerTv, correctAnswerTv;
     // Here we declare variables to store strings "Question (current question number) out of (total number of questions)", "Your answer:...", "Correct answer:..."
-    String qNum, plAnswer, corAnswer, answer9, answer10;
+    String plAnswer, corAnswer, answer9, answer10;
     // Here we declare Button
     Button buttonToMain;
     // This is an array of id's of question numbers
@@ -50,17 +48,19 @@ public class InvAnswersActivity extends AppCompatActivity implements View.OnClic
     // This method sets question numbers, shows player's answers and correct answers
     public void showAnswers() {
         fillAnswers();
-        for (int i = 0; i < questionNumbers.length; i++) {
-            questionNumber = findViewById(questionNumbers[i]);
-            qNum = getString(R.string.question) + currentQuestion + getString(R.string.out_of) + totalNumberOfQuestions;
-            questionNumber.setText(qNum);
-            currentQuestion++;
+        int numberOfQuestion = 1;
+        for (int i = 0; i < TOTAL_QUESTIONS_COUNT; i++) {
+            String caption = getString(R.string.question) + " " + numberOfQuestion + " "
+                    + getString(R.string.out_of) + " " + TOTAL_QUESTIONS_COUNT;
+            ((TextView) findViewById(questionNumbers[i])).setText(caption);
+            numberOfQuestion++;
         }
+
         for (int j = 0; j < playerAnsId.length; j++) {
             playerAnswerTv = findViewById(playerAnsId[j]);
             correctAnswerTv = findViewById(correctAnsId[j]);
-            plAnswer = getString(R.string.your_answer) + checkedAnswers[j];
-            corAnswer = getString(R.string.inv_correct_answer) + correctAnswers[j];
+            plAnswer = getString(R.string.your_answer) + " " + checkedAnswers[j];
+            corAnswer = getString(R.string.inv_correct_answer) + " " + correctAnswers[j];
             playerAnswerTv.setText(plAnswer);
             correctAnswerTv.setText(corAnswer);
             if (checkedAnswers[j].equals(correctAnswers[j])) {
@@ -71,8 +71,8 @@ public class InvAnswersActivity extends AppCompatActivity implements View.OnClic
         }
         playerAnswerTv = findViewById(R.id.tv_q9_player_answer);
         correctAnswerTv = findViewById(R.id.tv_q9_correct_answer);
-        plAnswer = getString(R.string.your_answer) + answer9;
-        corAnswer = getString(R.string.inv_correct_answer) + getResources().getText(R.string.q_9_var_1);
+        plAnswer = getString(R.string.your_answer) + " " + answer9;
+        corAnswer = getString(R.string.inv_correct_answer) + " " + getResources().getText(R.string.q_9_var_1);
         playerAnswerTv.setText(plAnswer);
         correctAnswerTv.setText(corAnswer);
         if (answer9.equals(getResources().getText(R.string.q_9_var_1))) {
@@ -82,8 +82,8 @@ public class InvAnswersActivity extends AppCompatActivity implements View.OnClic
         }
         playerAnswerTv = findViewById(R.id.tv_q10_player_answer);
         correctAnswerTv = findViewById(R.id.tv_q10_correct_answer);
-        plAnswer = getString(R.string.your_answer) + answer10;
-        corAnswer = getString(R.string.inv_correct_answer) + (getString(R.string.q_10_var_1) + "\n" + getString(R.string.q_10_var_4));
+        plAnswer = getString(R.string.your_answer) + " " + answer10;
+        corAnswer = getString(R.string.inv_correct_answer) + "\n" + (getString(R.string.q_10_var_1) + "\n" + getString(R.string.q_10_var_4));
         playerAnswerTv.setText(plAnswer);
         correctAnswerTv.setText(corAnswer);
         if (answer10.equals((getString(R.string.q_10_var_1) + "\n" + getString(R.string.q_10_var_4)))) {
@@ -106,11 +106,5 @@ public class InvAnswersActivity extends AppCompatActivity implements View.OnClic
                 mainActivity();
                 break;
         }
-    }
-
-    // This method is called by clicking on Back button. It returns the user to the Main screen and kills this activity.
-    @Override
-    public void onBackPressed() {
-        mainActivity();
     }
 }
