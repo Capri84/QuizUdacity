@@ -20,58 +20,58 @@ public class InventionsActivity extends AppCompatActivity implements View.OnClic
     // Total number of questions
     int totalNumberOfQuestions = 10;
     // Correct answers counter
-    int correct_score = 0;
+    int correctScore = 0;
     // Incorrect answers counter
-    int incorrect_score = 0;
+    int incorrectScore = 0;
     // Here we declare a variable to store the question number
-    TextView question_number;
+    TextView questionNumber;
     // Here we declare a variable to store player's name
     String name;
     // Here we declare a variable for the quiz results toast
     String resultMessage;
     // Here we declare a variable to store a string "Question (current question number) out of (total number of questions)"
-    String qnum, answer9, answer10;
+    String qNum, answer9, answer10;
     // This is an array of id's of question numbers
-    int[] question_numbers = {R.id.inv_question1_number, R.id.inv_question2_number, R.id.inv_question3_number, R.id.inv_question4_number, R.id.inv_question5_number,
-            R.id.inv_question6_number, R.id.inv_question7_number, R.id.inv_question8_number, R.id.inv_question9_number, R.id.inv_question10_number};
-    int[] correct_ans = {R.id.answer1_3, R.id.answer2_1, R.id.answer3_3, R.id.answer4_3, R.id.answer5_3,
-            R.id.answer6_2, R.id.answer7_3, R.id.answer8_3};
-    int[] radioGroups = {R.id.radio_group1, R.id.radio_group2, R.id.radio_group3, R.id.radio_group4, R.id.radio_group5,
-            R.id.radio_group6, R.id.radio_group7, R.id.radio_group8};
-    String[] checked_answers = new String[8];
-    String[] correct_answers = new String[8];
+    int[] questionNumbers = {R.id.tv_question1_number, R.id.tv_question2_number, R.id.tv_question3_number, R.id.tv_question4_number, R.id.tv_question5_number,
+            R.id.tv_question6_number, R.id.tv_question7_number, R.id.tv_question8_number, R.id.tv_question9_number, R.id.tv_question10_number};
+    int[] correctAns = {R.id.rb_answer1_3, R.id.rb_answer2_1, R.id.rb_answer3_3, R.id.rb_answer4_3, R.id.rb_answer5_3,
+            R.id.rb_answer6_2, R.id.rb_answer7_3, R.id.rb_answer8_3};
+    int[] radioGroups = {R.id.rg_q1_variants, R.id.rg_q2_variants, R.id.rg_q3_variants, R.id.rg_q4_variants, R.id.rg_q5_variants,
+            R.id.rg_q6_variants, R.id.rg_q7_variants, R.id.rg_q8_variants};
+    String[] checkedAnswers = new String[8];
+    String[] correctAnswers = new String[8];
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         activityInventionsBinding = DataBindingUtil.setContentView(this, R.layout.activity_inventions);
-        activityInventionsBinding.answersButton.setOnClickListener(this);
-        activityInventionsBinding.submitButton.setOnClickListener(this);
-        activityInventionsBinding.shareButton.setOnClickListener(this);
+        activityInventionsBinding.btnAnswersButton.setOnClickListener(this);
+        activityInventionsBinding.btnSubmitButton.setOnClickListener(this);
+        activityInventionsBinding.btnShareButton.setOnClickListener(this);
         // Here we set numbers of the questions
-        setQuestion_numbers();
+        setQuestionNumbers();
     }
 
     // This method sets numbers to the questions
-    public void setQuestion_numbers() {
-        for (int j = 0; j < question_numbers.length; j++) {
-            question_number = findViewById(question_numbers[j]);
-            qnum = getString(R.string.questionNumber, currentQuestion, totalNumberOfQuestions);
-            question_number.setText(qnum);
+    public void setQuestionNumbers() {
+        for (int j = 0; j < questionNumbers.length; j++) {
+            questionNumber = findViewById(questionNumbers[j]);
+            qNum = getString(R.string.question) + currentQuestion + getString(R.string.out_of) + totalNumberOfQuestions;
+            questionNumber.setText(qNum);
             currentQuestion++;
         }
     }
 
     public void onClick(View view) {
         switch (view.getId()) {
-            case R.id.answers_button:
+            case R.id.btn_answers_button:
                 invAnswersActivity();
                 this.finish();
                 break;
-            case R.id.submit_button:
+            case R.id.btn_submit_button:
                 submit();
                 break;
-            case R.id.share_button:
+            case R.id.btn_share_button:
                 share();
                 break;
         }
@@ -79,89 +79,86 @@ public class InventionsActivity extends AppCompatActivity implements View.OnClic
 
     // This method is called by clicking on Submit button. It checks if at least one answer has been selected in the quiz, and if not, asks to choose, and if so, creates and displays a toast with the results of the game.
     public void submit() {
-        correct_score = 0;
-        incorrect_score = 0;
+        correctScore = 0;
+        incorrectScore = 0;
         answer10 = "";
-        if (activityInventionsBinding.radioGroup1.getCheckedRadioButtonId() == -1 && activityInventionsBinding.radioGroup2.getCheckedRadioButtonId() == -1 &&
-                activityInventionsBinding.radioGroup3.getCheckedRadioButtonId() == -1 && activityInventionsBinding.radioGroup4.getCheckedRadioButtonId() == -1 &&
-                activityInventionsBinding.radioGroup5.getCheckedRadioButtonId() == -1 && activityInventionsBinding.radioGroup6.getCheckedRadioButtonId() == -1 &&
-                activityInventionsBinding.radioGroup7.getCheckedRadioButtonId() == -1 && activityInventionsBinding.radioGroup8.getCheckedRadioButtonId() == -1 &&
-                activityInventionsBinding.invAnswer9.getText().toString().trim().equals("") && (!activityInventionsBinding.checkbox1.isChecked() && !activityInventionsBinding.checkbox2.isChecked() && !activityInventionsBinding.checkbox3.isChecked() && !activityInventionsBinding.checkbox4.isChecked())) {
-            Toast.makeText(this, R.string.not_chosen1, Toast.LENGTH_SHORT).show();
-            return;
+        if (activityInventionsBinding.rgQ1Variants.getCheckedRadioButtonId() == -1 && activityInventionsBinding.rgQ2Variants.getCheckedRadioButtonId() == -1 &&
+                activityInventionsBinding.rgQ3Variants.getCheckedRadioButtonId() == -1 && activityInventionsBinding.rgQ4Variants.getCheckedRadioButtonId() == -1 &&
+                activityInventionsBinding.rgQ5Variants.getCheckedRadioButtonId() == -1 && activityInventionsBinding.rgQ6Variants.getCheckedRadioButtonId() == -1 &&
+                activityInventionsBinding.rgQ7Variants.getCheckedRadioButtonId() == -1 && activityInventionsBinding.rgQ8Variants.getCheckedRadioButtonId() == -1 &&
+                activityInventionsBinding.etAnswer9.getText().toString().trim().equals("") && (!activityInventionsBinding.cbkAnswer1.isChecked() && !activityInventionsBinding.cbkAnswer2.isChecked() && !activityInventionsBinding.cbkAnswer3.isChecked() && !activityInventionsBinding.cbkAnswer4.isChecked())) {
+            Toast.makeText(this, R.string.not_chosen, Toast.LENGTH_SHORT).show();
         } else {
-            activityInventionsBinding.answersButton.setVisibility(View.VISIBLE);
-            activityInventionsBinding.shareButton.setVisibility(View.VISIBLE);
+            activityInventionsBinding.btnAnswersButton.setVisibility(View.VISIBLE);
+            activityInventionsBinding.btnShareButton.setVisibility(View.VISIBLE);
             for (int rg = 0; rg < radioGroups.length; rg++) {
-                RadioButton correct_answer = (RadioButton) findViewById(correct_ans[rg]);
-                correct_answers[rg] = ((RadioButton) findViewById(correct_answer.getId())).getText().toString();
-                RadioGroup checked_group = (RadioGroup) findViewById(radioGroups[rg]);
+                RadioButton correct_answer = findViewById(correctAns[rg]);
+                correctAnswers[rg] = ((RadioButton) findViewById(correct_answer.getId())).getText().toString();
+                RadioGroup checked_group = findViewById(radioGroups[rg]);
                 if (checked_group.getCheckedRadioButtonId() == -1) {
-                    checked_answers[rg] = getString(R.string.not_answered);
+                    checkedAnswers[rg] = getString(R.string.not_answered);
                 } else {
-                    checked_answers[rg] = ((RadioButton) findViewById(checked_group.getCheckedRadioButtonId())).getText().toString();
+                    checkedAnswers[rg] = ((RadioButton) findViewById(checked_group.getCheckedRadioButtonId())).getText().toString();
                 }
                 if (correct_answer.isChecked()) {
-                    correct_score++;
+                    correctScore++;
                 } else {
-                    incorrect_score++;
+                    incorrectScore++;
                 }
             }
-            if (activityInventionsBinding.invAnswer9.getText().toString().trim().equals("")) {
+            if (activityInventionsBinding.etAnswer9.getText().toString().trim().equals("")) {
                 answer9 = getString(R.string.not_answered);
-                incorrect_score++;
-            } else if (activityInventionsBinding.invAnswer9.getText().toString().trim().equals(getString(R.string.inv_q9_var_1))) {
-                answer9 = getString(R.string.inv_q9_var_1);
-                correct_score++;
+                incorrectScore++;
+            } else if (activityInventionsBinding.etAnswer9.getText().toString().trim().equals(getString(R.string.q_9_var_1))) {
+                answer9 = getString(R.string.q_9_var_1);
+                correctScore++;
             } else {
-                answer9 = activityInventionsBinding.invAnswer9.getText().toString().trim();
-                incorrect_score++;
+                answer9 = activityInventionsBinding.etAnswer9.getText().toString().trim();
+                incorrectScore++;
             }
-            if (!activityInventionsBinding.checkbox1.isChecked() && !activityInventionsBinding.checkbox2.isChecked() && !activityInventionsBinding.checkbox3.isChecked() && !activityInventionsBinding.checkbox4.isChecked()) {
+            if (!activityInventionsBinding.cbkAnswer1.isChecked() && !activityInventionsBinding.cbkAnswer2.isChecked() && !activityInventionsBinding.cbkAnswer3.isChecked() && !activityInventionsBinding.cbkAnswer4.isChecked()) {
                 answer10 = getString(R.string.not_answered);
             }
-            if (activityInventionsBinding.checkbox1.isChecked()) {
-                answer10 = activityInventionsBinding.checkbox1.getText().toString();
+            if (activityInventionsBinding.cbkAnswer1.isChecked()) {
+                answer10 = activityInventionsBinding.cbkAnswer1.getText().toString();
             }
-            if (activityInventionsBinding.checkbox2.isChecked()) {
-                answer10 = answer10 + "\n" + activityInventionsBinding.checkbox2.getText().toString();
+            if (activityInventionsBinding.cbkAnswer2.isChecked()) {
+                answer10 = answer10 + "\n" + activityInventionsBinding.cbkAnswer2.getText().toString();
             }
-            if (activityInventionsBinding.checkbox3.isChecked()) {
-                answer10 = answer10 + "\n" + activityInventionsBinding.checkbox3.getText().toString();
+            if (activityInventionsBinding.cbkAnswer3.isChecked()) {
+                answer10 = answer10 + "\n" + activityInventionsBinding.cbkAnswer3.getText().toString();
             }
-            if (activityInventionsBinding.checkbox4.isChecked()) {
-                answer10 = answer10 + "\n" + activityInventionsBinding.checkbox4.getText().toString();
+            if (activityInventionsBinding.cbkAnswer4.isChecked()) {
+                answer10 = answer10 + "\n" + activityInventionsBinding.cbkAnswer4.getText().toString();
             }
-            if (activityInventionsBinding.checkbox1.isChecked() && !activityInventionsBinding.checkbox2.isChecked() && !activityInventionsBinding.checkbox3.isChecked() && activityInventionsBinding.checkbox4.isChecked()) {
-                correct_score++;
+            if (activityInventionsBinding.cbkAnswer1.isChecked() && !activityInventionsBinding.cbkAnswer2.isChecked() && !activityInventionsBinding.cbkAnswer3.isChecked() && activityInventionsBinding.cbkAnswer4.isChecked()) {
+                correctScore++;
             } else {
-                incorrect_score++;
+                incorrectScore++;
             }
-            Intent openInventionsQuiz = getIntent();
-            name = openInventionsQuiz.getStringExtra(MainActivity.EXTRA_MESSAGE);
-            String resultMessage = createQuizSummary(name, correct_score, incorrect_score, totalNumberOfQuestions);
+            Intent openInventionsQuizIntent = getIntent();
+            name = openInventionsQuizIntent.getStringExtra(MainActivity.EXTRA_MESSAGE);
+            String resultMessage = createQuizSummary(name, correctScore, incorrectScore, totalNumberOfQuestions);
             Toast.makeText(getApplicationContext(), resultMessage, Toast.LENGTH_LONG).show();
         }
     }
 
     // This method creates Quiz summary.
-    private String createQuizSummary(String name, int correct_score, int incorrect_score, int totalNumberOfQuestions) {
-        resultMessage = getString(R.string.nameSummary, name);
-        resultMessage += "\n" + getString(R.string.well_done);
-        resultMessage += "\n" + getString(R.string.results);
-        resultMessage += "\n" + getString(R.string.total_correct, correct_score, totalNumberOfQuestions);
-        resultMessage += "\n" + getString(R.string.total_incorrect, incorrect_score, totalNumberOfQuestions);
+    private String createQuizSummary(String name, int correctScore, int incorrectScore, int totalNumberOfQuestions) {
+        resultMessage = getString(R.string.name_summary) + name + "!" + "\n" + getString(R.string.well_done) +
+                "\n" + getString(R.string.results) + "\n" + correctScore + getString(R.string.total_correct) + totalNumberOfQuestions + "!" +
+                "\n" + incorrectScore + getString(R.string.total_incorrect) + totalNumberOfQuestions + "!";
         return resultMessage;
     }
 
     // This method is called by clicking on Answers button. It opens Answers Activity.
     public void invAnswersActivity() {
-        Intent invAnswersActivity = new Intent(this, invAnswersActivity.class);
-        invAnswersActivity.putExtra("players_answer", checked_answers);
-        invAnswersActivity.putExtra("correct_answer", correct_answers);
-        invAnswersActivity.putExtra("answer9", answer9);
-        invAnswersActivity.putExtra("answer10", answer10);
-        startActivity(invAnswersActivity);
+        Intent invAnswersActivityIntent = new Intent(this, InvAnswersActivity.class);
+        invAnswersActivityIntent.putExtra("players_answer", checkedAnswers);
+        invAnswersActivityIntent.putExtra("correct_answer", correctAnswers);
+        invAnswersActivityIntent.putExtra("answer9", answer9);
+        invAnswersActivityIntent.putExtra("answer10", answer10);
+        startActivity(invAnswersActivityIntent);
     }
 
     // This method is called by clicking on Share button. It allows to share your game results via e-mail, social apps, etc.

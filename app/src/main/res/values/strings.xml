@@ -1,95 +1,96 @@
-<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+<resources>
     <!--Miscellaneous strings-->
     <string name="app_name">QuizUdacity</string>
     <string name="players_name_hint">Enter your name</string>
-    <string name="inv9_hint">1770/1911/1824/1947</string>
+    <string name="quest_9_hint">1770/1911/1824/1947</string>
     <string name="no_name">Please, enter your name!</string>
-    <string name="nameSummary">Congratulations, <xliff:g example="Amy" id="name">%s</xliff:g>!</string>
+    <string name="name_summary">Congratulations, </string>
     <string name="well_done">Well done!</string>
     <string name="results">Here are your results: </string>
-    <string name="total_correct"><xliff:g example="5" id="totalCorrect">%d</xliff:g> correct answers out of <xliff:g example="10" id="number_of_questions">%d</xliff:g>!</string>
-    <string name="total_incorrect"><xliff:g example="5" id="totalIncorrect">%d</xliff:g> wrong answers out of <xliff:g example="10" id="number_of_questions">%d</xliff:g>!</string>
-    <string name="questionNumber">Question <xliff:g example="5" id="currentQuestion">%d</xliff:g> out of <xliff:g example="10" id="number_of_questions">%d</xliff:g></string>
-    <string name="not_chosen1">Please, answer at least one question to proceed</string>
-    <string name="inventions_quiz" translatable="false">Inventions Quiz</string>
-    <string name="inv_quiz_answers" translatable="false">Answers and comments</string>
+    <string name="total_correct"> correct answers out of </string>
+    <string name="total_incorrect"> wrong answers out of </string>
+    <string name="question">Question </string>
+    <string name="out_of"> out of </string>
+    <string name="not_chosen">Please, answer at least one question to proceed</string>
+    <string name="inventions_quiz">Inventions Quiz</string>
+    <string name="inv_quiz_answers">Answers and comments</string>
     <string name="submit_button">Submit</string>
     <string name="main_screen">Home</string>
     <string name="share">Share</string>
     <string name="answers">Answers</string>
-    <string name="yourAnswer">Your answer:  <xliff:g example="Helicopter" id="inv_your_answer">%s</xliff:g></string>
-    <string name="invCorrectAnswer">Correct answer:  <xliff:g example="Helicopter" id="inv_correct_answer">%s</xliff:g></string>
+    <string name="your_answer">Your answer: </string>
+    <string name="inv_correct_answer">Correct answer: </string>
     <string name="not_answered">Not answered</string>
 
     <!--Inventions Quiz: Questions-->
-    <string name="inv_q_1">Where was the yo-yo invented?</string>
-    <string name="inv_q_2">Who is the only U.S. President to invent and patent something?</string>
-    <string name="inv_q_3">For whom high heeled shoes were invented?</string>
-    <string name="inv_q_4">What beverage was invented by Charles Alderton in 1885 in Waco, Texas?</string>
-    <string name="inv_q_5">What did Igor Sikorsky invent?</string>
-    <string name="inv_q_6">When was the \"Monopoly\" game created?</string>
-    <string name="inv_q_7">How many predictions of Jules Verne were realized?</string>
-    <string name="inv_q_8">What piece of clothing was invented by French fashion designer Louis Reard in 1946?</string>
-    <string name="inv_q_9">When was the toothbrush invented?</string>
-    <string name="inv_q_10">Who invented the first controllable flying Airplane?</string>
+    <string name="question_1">Where was the yo-yo invented?</string>
+    <string name="question_2">Who is the only U.S. President to invent and patent something?</string>
+    <string name="question_3">For whom high heeled shoes were invented?</string>
+    <string name="question_4">What beverage was invented by Charles Alderton in 1885 in Waco, Texas?</string>
+    <string name="question_5">What did Igor Sikorsky invent?</string>
+    <string name="question_6">When was the \"Monopoly\" game created?</string>
+    <string name="question_7">How many predictions of Jules Verne were realized?</string>
+    <string name="question_8">What piece of clothing was invented by French fashion designer Louis Reard in 1946?</string>
+    <string name="question_9">When was the toothbrush invented?</string>
+    <string name="question_10">Who invented the first controllable flying Airplane?</string>
 
     <!--Inventions Quiz Answer Variants-->
-    <string name="inv_q1_var_1">France</string>
-    <string name="inv_q1_var_2">USA</string>
-    <string name="inv_q1_var_3">Philippines</string>
-    <string name="inv_q1_var_4">England</string>
+    <string name="q_1_var_1">France</string>
+    <string name="q_1_var_2">USA</string>
+    <string name="q_1_var_3">Philippines</string>
+    <string name="q_1_var_4">England</string>
 
-    <string name="inv_q2_var_1">Abraham Lincoln</string>
-    <string name="inv_q2_var_2">Theodore Roosevelt</string>
-    <string name="inv_q2_var_3">Thomas Jefferson</string>
-    <string name="inv_q2_var_4">Rutherford B. Hayes</string>
+    <string name="q_2_var_1">Abraham Lincoln</string>
+    <string name="q_2_var_2">Theodore Roosevelt</string>
+    <string name="q_2_var_3">Thomas Jefferson</string>
+    <string name="q_2_var_4">Rutherford B. Hayes</string>
 
-    <string name="inv_q3_var_1">Cleopatra</string>
-    <string name="inv_q3_var_2">Queen Elizabeth I</string>
-    <string name="inv_q3_var_3">King Louis the XIV</string>
-    <string name="inv_q3_var_4">King Charles II</string>
+    <string name="q_3_var_1">Cleopatra</string>
+    <string name="q_3_var_2">Queen Elizabeth I</string>
+    <string name="q_3_var_3">King Louis the XIV</string>
+    <string name="q_3_var_4">King Charles II</string>
 
-    <string name="inv_q4_var_1">Cream soda</string>
-    <string name="inv_q4_var_2">Coca-Cola</string>
-    <string name="inv_q4_var_3">Dr. Pepper</string>
-    <string name="inv_q4_var_4">Sprite</string>
+    <string name="q_4_var_1">Cream soda</string>
+    <string name="q_4_var_2">Coca-Cola</string>
+    <string name="q_4_var_3">Dr. Pepper</string>
+    <string name="q_4_var_4">Sprite</string>
 
-    <string name="inv_q5_var_1">Hydroplane</string>
-    <string name="inv_q5_var_2">Jet engine airplane</string>
-    <string name="inv_q5_var_3">Helicopter</string>
-    <string name="inv_q5_var_4">Glider</string>
+    <string name="q_5_var_1">Hydroplane</string>
+    <string name="q_5_var_2">Jet engine airplane</string>
+    <string name="q_5_var_3">Helicopter</string>
+    <string name="q_5_var_4">Glider</string>
 
-    <string name="inv_q6_var_1">1940s</string>
-    <string name="inv_q6_var_2">1930s</string>
-    <string name="inv_q6_var_3">1920s</string>
-    <string name="inv_q6_var_4">1950s</string>
+    <string name="q_6_var_1">1940s</string>
+    <string name="q_6_var_2">1930s</string>
+    <string name="q_6_var_3">1920s</string>
+    <string name="q_6_var_4">1950s</string>
 
-    <string name="inv_q7_var_1">108</string>
-    <string name="inv_q7_var_2">15</string>
-    <string name="inv_q7_var_3">64</string>
-    <string name="inv_q7_var_4">0</string>
+    <string name="q_7_var_1">108</string>
+    <string name="q_7_var_2">15</string>
+    <string name="q_7_var_3">64</string>
+    <string name="q_7_var_4">0</string>
 
-    <string name="inv_q8_var_1">Zoot suit</string>
-    <string name="inv_q8_var_2">Mini-skirt</string>
-    <string name="inv_q8_var_3">Bikini</string>
-    <string name="inv_q8_var_4">Tank top</string>
+    <string name="q_8_var_1">Zoot suit</string>
+    <string name="q_8_var_2">Mini-skirt</string>
+    <string name="q_8_var_3">Bikini</string>
+    <string name="q_8_var_4">Tank top</string>
 
-    <string name="inv_q9_var_1">1770</string>
+    <string name="q_9_var_1">1770</string>
 
-    <string name="inv_q10_var_1">Orville Wright</string>
-    <string name="inv_q10_var_2">Charles Lindbergh</string>
-    <string name="inv_q10_var_3">Amelia Earhart</string>
-    <string name="inv_q10_var_4">Wilbur Wright</string>
+    <string name="q_10_var_1">Orville Wright</string>
+    <string name="q_10_var_2">Charles Lindbergh</string>
+    <string name="q_10_var_3">Amelia Earhart</string>
+    <string name="q_10_var_4">Wilbur Wright</string>
 
     <!--Inventions: extra info-->
-    <string name="inv_q1_info">The yo-yo was first used by hunters as weapons. They were wooden disks on strings. In the 1920s, a man from the U.S. named Donald Duncan made the yo-yo into a toy after he visited the Philippines.</string>
-    <string name="inv_q2_info">In 1849 Honest Abe (Abraham Lincoln) invented a method to aid ships that got stuck on sandbars. It was never used.</string>
-    <string name="inv_q3_info">King Louis XIV was very short and didn\'t like looking up at people he spoke to, so he had a tall pair of shoes made for him.</string>
-    <string name="inv_q4_info">It\'s Dr. Pepper! The cherry-flavored cola made its debut at Morrison\'s Old Corner Drugstore.</string>
-    <string name="inv_q5_info">Invented in 1939.</string>
-    <string name="inv_q6_info">\"Monopoly\" was brought out for Christmas 1934. The first games were hand drawn on linoleum with streets from Atlantic City, N.J. as the property.</string>
-    <string name="inv_q7_info">To date, 64 of the 108 predictions that Jules Verne made in his science fiction works have been implemented. Among them, television and phototelegraph, an escalator and a moving pavement, a flight to the moon and organ transplantation, and much more.</string>
-    <string name="inv_q8_info">The bikini, a two-piece swimsuit named for the Bikini Atoll in the Pacific, made its debut on July 5, 1946.</string>
-    <string name="inv_q9_info">The first toothbrush was made out of a bone and small brush, by jail prisoner William Addis of England.</string>
-    <string name="inv_q10_info">Wilbur and Orville Wright made the first successful controlled powered flight at Kitty Hawk, North Carolina, in December 1903. The twelve second flight covered a distance of 120 feet and an altitude of just ten feet.</string>
+    <string name="q_1_info">The yo-yo was first used by hunters as weapons. They were wooden disks on strings. In the 1920s, a man from the U.S. named Donald Duncan made the yo-yo into a toy after he visited the Philippines.</string>
+    <string name="q_2_info">In 1849 Honest Abe (Abraham Lincoln) invented a method to aid ships that got stuck on sandbars. It was never used.</string>
+    <string name="q_3_info">King Louis XIV was very short and didn\'t like looking up at people he spoke to, so he had a tall pair of shoes made for him.</string>
+    <string name="q_4_info">It\'s Dr. Pepper! The cherry-flavored cola made its debut at Morrison\'s Old Corner Drugstore.</string>
+    <string name="q_5_info">Invented in 1939.</string>
+    <string name="q_6_info">\"Monopoly\" was brought out for Christmas 1934. The first games were hand drawn on linoleum with streets from Atlantic City, N.J. as the property.</string>
+    <string name="q_7_info">To date, 64 of the 108 predictions that Jules Verne made in his science fiction works have been implemented. Among them, television and phototelegraph, an escalator and a moving pavement, a flight to the moon and organ transplantation, and much more.</string>
+    <string name="q_8_info">The bikini, a two-piece swimsuit named for the Bikini Atoll in the Pacific, made its debut on July 5, 1946.</string>
+    <string name="q_9_info">The first toothbrush was made out of a bone and small brush, by jail prisoner William Addis of England.</string>
+    <string name="q_10_info">Wilbur and Orville Wright made the first successful controlled powered flight at Kitty Hawk, North Carolina, in December 1903. The twelve second flight covered a distance of 120 feet and an altitude of just ten feet.</string>
 </resources>

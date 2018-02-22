@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <layout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    tools:context="com.example.android.newyearquiz.MainActivity">
+    tools:context="com.example.android.quizudacity.MainActivity">
 
     <ScrollView
         android:layout_width="match_parent"
@@ -10,482 +10,482 @@
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_height="wrap_content"
             android:background="@color/inv_back"
             android:orientation="vertical">
 
             <TextView
-                android:id="@+id/inventions_header"
-                style="@style/inventions_header"
+                android:id="@+id/tv_inventions_header"
+                style="@style/HeaderStyle"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="@string/inventions_quiz" />
 
             <TextView
-                android:id="@+id/inv_question1_number"
-                style="@style/inventions_question_number"
+                android:id="@+id/tv_question1_number"
+                style="@style/QuestionNumberStyle"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content" />
 
             <TextView
-                android:id="@+id/inv_q1_question"
-                style="@style/inventions_questions"
+                android:id="@+id/tv_question_1"
+                style="@style/QuestionsStyle"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="@string/inv_q_1" />
+                android:text="@string/question_1" />
 
             <RadioGroup
-                android:id="@+id/radio_group1"
-                style="@style/inventions_rb"
+                android:id="@+id/rg_q1_variants"
+                style="@style/RadioButtonStyle"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:orientation="vertical">
 
                 <RadioButton
-                    android:id="@+id/answer1_1"
+                    android:id="@+id/rb_answer1_1"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="@string/inv_q1_var_1" />
+                    android:text="@string/q_1_var_1" />
 
                 <RadioButton
-                    android:id="@+id/answer1_2"
+                    android:id="@+id/rb_answer1_2"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="@string/inv_q1_var_2" />
+                    android:text="@string/q_1_var_2" />
 
                 <RadioButton
-                    android:id="@+id/answer1_3"
+                    android:id="@+id/rb_answer1_3"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="@string/inv_q1_var_3" />
+                    android:text="@string/q_1_var_3" />
 
                 <RadioButton
-                    android:id="@+id/answer1_4"
+                    android:id="@+id/rb_answer1_4"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="@string/inv_q1_var_4" />
+                    android:text="@string/q_1_var_4" />
             </RadioGroup>
 
             <View
-                style="@style/inv_view_margins"
+                style="@style/ViewMarginsStyle"
                 android:layout_width="match_parent" />
 
             <TextView
-                android:id="@+id/inv_question2_number"
-                style="@style/inventions_question_number"
+                android:id="@+id/tv_question2_number"
+                style="@style/QuestionNumberStyle"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content" />
 
             <TextView
-                android:id="@+id/inv_q2_question"
-                style="@style/inventions_questions"
+                android:id="@+id/tv_question_2"
+                style="@style/QuestionsStyle"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="@string/inv_q_2" />
+                android:text="@string/question_2" />
 
             <RadioGroup
-                android:id="@+id/radio_group2"
-                style="@style/inventions_rb"
+                android:id="@+id/rg_q2_variants"
+                style="@style/RadioButtonStyle"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:orientation="vertical">
 
                 <RadioButton
-                    android:id="@+id/answer2_1"
+                    android:id="@+id/rb_answer2_1"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="@string/inv_q2_var_1" />
+                    android:text="@string/q_2_var_1" />
 
                 <RadioButton
-                    android:id="@+id/answer2_2"
+                    android:id="@+id/rb_answer2_2"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="@string/inv_q2_var_2" />
+                    android:text="@string/q_2_var_2" />
 
                 <RadioButton
-                    android:id="@+id/answer2_3"
+                    android:id="@+id/rb_answer2_3"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="@string/inv_q2_var_3" />
+                    android:text="@string/q_2_var_3" />
 
                 <RadioButton
-                    android:id="@+id/answer2_4"
+                    android:id="@+id/rb_answer2_4"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="@string/inv_q2_var_4" />
+                    android:text="@string/q_2_var_4" />
             </RadioGroup>
 
             <View
-                style="@style/inv_view_margins"
+                style="@style/ViewMarginsStyle"
                 android:layout_width="match_parent" />
 
             <TextView
-                android:id="@+id/inv_question3_number"
-                style="@style/inventions_question_number"
+                android:id="@+id/tv_question3_number"
+                style="@style/QuestionNumberStyle"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content" />
 
             <TextView
-                android:id="@+id/inv_q3_question"
-                style="@style/inventions_questions"
+                android:id="@+id/tv_question_3"
+                style="@style/QuestionsStyle"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="@string/inv_q_3" />
+                android:text="@string/question_3" />
 
             <RadioGroup
-                android:id="@+id/radio_group3"
-                style="@style/inventions_rb"
+                android:id="@+id/rg_q3_variants"
+                style="@style/RadioButtonStyle"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:orientation="vertical">
 
                 <RadioButton
-                    android:id="@+id/answer3_1"
+                    android:id="@+id/rb_answer3_1"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="@string/inv_q3_var_1" />
+                    android:text="@string/q_3_var_1" />
 
                 <RadioButton
-                    android:id="@+id/answer3_2"
+                    android:id="@+id/rb_answer3_2"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="@string/inv_q3_var_2" />
+                    android:text="@string/q_3_var_2" />
 
                 <RadioButton
-                    android:id="@+id/answer3_3"
+                    android:id="@+id/rb_answer3_3"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="@string/inv_q3_var_3" />
+                    android:text="@string/q_3_var_3" />
 
                 <RadioButton
-                    android:id="@+id/answer3_4"
+                    android:id="@+id/rb_answer3_4"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="@string/inv_q3_var_4" />
+                    android:text="@string/q_3_var_4" />
             </RadioGroup>
 
             <View
-                style="@style/inv_view_margins"
+                style="@style/ViewMarginsStyle"
                 android:layout_width="match_parent" />
 
             <TextView
-                android:id="@+id/inv_question4_number"
-                style="@style/inventions_question_number"
+                android:id="@+id/tv_question4_number"
+                style="@style/QuestionNumberStyle"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content" />
 
             <TextView
-                android:id="@+id/inv_q4_question"
-                style="@style/inventions_questions"
+                android:id="@+id/tv_question_4"
+                style="@style/QuestionsStyle"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="@string/inv_q_4" />
+                android:text="@string/question_4" />
 
             <RadioGroup
-                android:id="@+id/radio_group4"
-                style="@style/inventions_rb"
+                android:id="@+id/rg_q4_variants"
+                style="@style/RadioButtonStyle"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:orientation="vertical">
 
                 <RadioButton
-                    android:id="@+id/answer4_1"
+                    android:id="@+id/rb_answer4_1"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="@string/inv_q4_var_1" />
+                    android:text="@string/q_4_var_1" />
 
                 <RadioButton
-                    android:id="@+id/answer4_2"
+                    android:id="@+id/rb_answer4_2"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="@string/inv_q4_var_2" />
+                    android:text="@string/q_4_var_2" />
 
                 <RadioButton
-                    android:id="@+id/answer4_3"
+                    android:id="@+id/rb_answer4_3"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="@string/inv_q4_var_3" />
+                    android:text="@string/q_4_var_3" />
 
                 <RadioButton
-                    android:id="@+id/answer4_4"
+                    android:id="@+id/rb_answer4_4"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="@string/inv_q4_var_4" />
+                    android:text="@string/q_4_var_4" />
             </RadioGroup>
 
             <View
-                style="@style/inv_view_margins"
+                style="@style/ViewMarginsStyle"
                 android:layout_width="match_parent" />
 
             <TextView
-                android:id="@+id/inv_question5_number"
-                style="@style/inventions_question_number"
+                android:id="@+id/tv_question5_number"
+                style="@style/QuestionNumberStyle"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content" />
 
             <TextView
-                android:id="@+id/inv_q5_question"
-                style="@style/inventions_questions"
+                android:id="@+id/tv_question_5"
+                style="@style/QuestionsStyle"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="@string/inv_q_5" />
+                android:text="@string/question_5" />
 
             <RadioGroup
-                android:id="@+id/radio_group5"
-                style="@style/inventions_rb"
+                android:id="@+id/rg_q5_variants"
+                style="@style/RadioButtonStyle"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:orientation="vertical">
 
                 <RadioButton
-                    android:id="@+id/answer5_1"
+                    android:id="@+id/rb_answer5_1"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="@string/inv_q5_var_1" />
+                    android:text="@string/q_5_var_1" />
 
                 <RadioButton
-                    android:id="@+id/answer5_2"
+                    android:id="@+id/rb_answer5_2"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="@string/inv_q5_var_2" />
+                    android:text="@string/q_5_var_2" />
 
                 <RadioButton
-                    android:id="@+id/answer5_3"
+                    android:id="@+id/rb_answer5_3"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="@string/inv_q5_var_3" />
+                    android:text="@string/q_5_var_3" />
 
                 <RadioButton
-                    android:id="@+id/answer5_4"
+                    android:id="@+id/rb_answer5_4"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="@string/inv_q5_var_4" />
+                    android:text="@string/q_5_var_4" />
             </RadioGroup>
 
             <View
-                style="@style/inv_view_margins"
+                style="@style/ViewMarginsStyle"
                 android:layout_width="match_parent" />
 
             <TextView
-                android:id="@+id/inv_question6_number"
-                style="@style/inventions_question_number"
+                android:id="@+id/tv_question6_number"
+                style="@style/QuestionNumberStyle"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content" />
 
             <TextView
-                android:id="@+id/inv_q6_question"
-                style="@style/inventions_questions"
+                android:id="@+id/tv_question_6"
+                style="@style/QuestionsStyle"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="@string/inv_q_6" />
+                android:text="@string/question_6" />
 
             <RadioGroup
-                android:id="@+id/radio_group6"
-                style="@style/inventions_rb"
+                android:id="@+id/rg_q6_variants"
+                style="@style/RadioButtonStyle"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:orientation="vertical">
 
                 <RadioButton
-                    android:id="@+id/answer6_1"
+                    android:id="@+id/rb_answer6_1"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="@string/inv_q6_var_1" />
+                    android:text="@string/q_6_var_1" />
 
                 <RadioButton
-                    android:id="@+id/answer6_2"
+                    android:id="@+id/rb_answer6_2"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="@string/inv_q6_var_2" />
+                    android:text="@string/q_6_var_2" />
 
                 <RadioButton
-                    android:id="@+id/answer6_3"
+                    android:id="@+id/rb_answer6_3"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="@string/inv_q6_var_3" />
+                    android:text="@string/q_6_var_3" />
 
                 <RadioButton
-                    android:id="@+id/answer6_4"
+                    android:id="@+id/rb_answer6_4"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="@string/inv_q6_var_4" />
+                    android:text="@string/q_6_var_4" />
             </RadioGroup>
 
             <View
-                style="@style/inv_view_margins"
+                style="@style/ViewMarginsStyle"
                 android:layout_width="match_parent" />
 
             <TextView
-                android:id="@+id/inv_question7_number"
-                style="@style/inventions_question_number"
+                android:id="@+id/tv_question7_number"
+                style="@style/QuestionNumberStyle"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content" />
 
             <TextView
-                android:id="@+id/inv_q7_question"
-                style="@style/inventions_questions"
+                android:id="@+id/tv_question_7"
+                style="@style/QuestionsStyle"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="@string/inv_q_7" />
+                android:text="@string/question_7" />
 
             <RadioGroup
-                android:id="@+id/radio_group7"
-                style="@style/inventions_rb"
+                android:id="@+id/rg_q7_variants"
+                style="@style/RadioButtonStyle"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:orientation="vertical">
 
                 <RadioButton
-                    android:id="@+id/answer7_1"
+                    android:id="@+id/rb_answer7_1"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="@string/inv_q7_var_1" />
+                    android:text="@string/q_7_var_1" />
 
                 <RadioButton
-                    android:id="@+id/answer7_2"
+                    android:id="@+id/rb_answer7_2"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="@string/inv_q7_var_2" />
+                    android:text="@string/q_7_var_2" />
 
                 <RadioButton
-                    android:id="@+id/answer7_3"
+                    android:id="@+id/rb_answer7_3"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="@string/inv_q7_var_3" />
+                    android:text="@string/q_7_var_3" />
 
                 <RadioButton
-                    android:id="@+id/answer7_4"
+                    android:id="@+id/rb_answer7_4"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="@string/inv_q7_var_4" />
+                    android:text="@string/q_7_var_4" />
             </RadioGroup>
 
             <View
-                style="@style/inv_view_margins"
+                style="@style/ViewMarginsStyle"
                 android:layout_width="match_parent" />
 
             <TextView
-                android:id="@+id/inv_question8_number"
-                style="@style/inventions_question_number"
+                android:id="@+id/tv_question8_number"
+                style="@style/QuestionNumberStyle"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content" />
 
             <TextView
-                android:id="@+id/inv_q8_question"
-                style="@style/inventions_questions"
+                android:id="@+id/tv_question_8"
+                style="@style/QuestionsStyle"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="@string/inv_q_8" />
+                android:text="@string/question_8" />
 
             <RadioGroup
-                android:id="@+id/radio_group8"
-                style="@style/inventions_rb"
+                android:id="@+id/rg_q8_variants"
+                style="@style/RadioButtonStyle"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:orientation="vertical">
 
                 <RadioButton
-                    android:id="@+id/answer8_1"
+                    android:id="@+id/rb_answer8_1"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="@string/inv_q8_var_1" />
+                    android:text="@string/q_8_var_1" />
 
                 <RadioButton
-                    android:id="@+id/answer8_2"
+                    android:id="@+id/rb_answer8_2"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="@string/inv_q8_var_2" />
+                    android:text="@string/q_8_var_2" />
 
                 <RadioButton
-                    android:id="@+id/answer8_3"
+                    android:id="@+id/rb_answer8_3"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="@string/inv_q8_var_3" />
+                    android:text="@string/q_8_var_3" />
 
                 <RadioButton
-                    android:id="@+id/answer8_4"
+                    android:id="@+id/rb_answer8_4"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="@string/inv_q8_var_4" />
+                    android:text="@string/q_8_var_4" />
             </RadioGroup>
 
             <View
-                style="@style/inv_view_margins"
+                style="@style/ViewMarginsStyle"
                 android:layout_width="match_parent" />
 
             <TextView
-                android:id="@+id/inv_question9_number"
-                style="@style/inventions_question_number"
+                android:id="@+id/tv_question9_number"
+                style="@style/QuestionNumberStyle"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content" />
 
             <TextView
-                android:id="@+id/inv_q9_question"
-                style="@style/inventions_questions"
+                android:id="@+id/tv_question_9"
+                style="@style/QuestionsStyle"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="@string/inv_q_9" />
+                android:text="@string/question_9" />
 
             <EditText
-                android:id="@+id/inv_answer9"
-                style="@style/name_field_margins"
+                android:id="@+id/et_answer9"
+                style="@style/NameFieldMargins"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:gravity="bottom|center_horizontal"
-                android:hint="@string/inv9_hint"
+                android:hint="@string/quest_9_hint"
                 android:inputType="number"
                 android:textStyle="italic" />
 
             <View
-                style="@style/inv_view_margins"
+                style="@style/ViewMarginsStyle"
                 android:layout_width="match_parent" />
 
             <TextView
-                android:id="@+id/inv_question10_number"
-                style="@style/inventions_question_number"
+                android:id="@+id/tv_question10_number"
+                style="@style/QuestionNumberStyle"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content" />
 
             <TextView
-                android:id="@+id/inv_q10_question"
-                style="@style/inventions_questions"
+                android:id="@+id/tv_question_10"
+                style="@style/QuestionsStyle"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="@string/inv_q_10" />
+                android:text="@string/question_10" />
 
             <LinearLayout
-                style="@style/inventions_rb"
+                style="@style/RadioButtonStyle"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:orientation="vertical">
 
                 <CheckBox
-                    android:id="@+id/checkbox1"
+                    android:id="@+id/cbk_answer1"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:text="@string/inv_q10_var_1" />
+                    android:text="@string/q_10_var_1" />
 
                 <CheckBox
-                    android:id="@+id/checkbox2"
+                    android:id="@+id/cbk_answer2"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:text="@string/inv_q10_var_2" />
+                    android:text="@string/q_10_var_2" />
 
                 <CheckBox
-                    android:id="@+id/checkbox3"
+                    android:id="@+id/cbk_answer3"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:text="@string/inv_q10_var_3" />
+                    android:text="@string/q_10_var_3" />
 
                 <CheckBox
-                    android:id="@+id/checkbox4"
+                    android:id="@+id/cbk_answer4"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:text="@string/inv_q10_var_4" />
+                    android:text="@string/q_10_var_4" />
             </LinearLayout>
 
             <LinearLayout
@@ -495,23 +495,23 @@
                 android:orientation="horizontal">
 
                 <Button
-                    android:id="@+id/answers_button"
-                    style="@style/inventions_buttons"
+                    android:id="@+id/btn_answers_button"
+                    style="@style/ButtonsStyle"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@string/answers"
                     android:visibility="invisible" />
 
                 <Button
-                    android:id="@+id/submit_button"
-                    style="@style/inventions_buttons"
+                    android:id="@+id/btn_submit_button"
+                    style="@style/ButtonsStyle"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@string/submit_button" />
 
                 <Button
-                    android:id="@+id/share_button"
-                    style="@style/inventions_buttons"
+                    android:id="@+id/btn_share_button"
+                    style="@style/ButtonsStyle"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@string/share"

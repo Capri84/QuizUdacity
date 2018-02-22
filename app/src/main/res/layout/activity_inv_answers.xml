@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <layout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    tools:context="com.example.android.newyearquiz.MainActivity">
+    tools:context="com.example.android.quizudacity.MainActivity">
 
     <ScrollView
         android:layout_width="match_parent"
@@ -10,20 +10,20 @@
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_height="wrap_content"
             android:background="@color/inv_back"
             android:orientation="vertical">
 
             <TextView
                 android:id="@+id/inventions_header"
-                style="@style/inventions_header"
+                style="@style/HeaderStyle"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="@string/inv_quiz_answers" />
 
             <TextView
-                android:id="@+id/inv_question1_number"
-                style="@style/inventions_question_number"
+                android:id="@+id/tv_question1_number"
+                style="@style/QuestionNumberStyle"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content" />
 
@@ -33,54 +33,54 @@
                 android:orientation="horizontal">
 
                 <TextView
-                    android:id="@+id/inv_q1_question"
-                    style="@style/inventions_questions"
+                    android:id="@+id/tv_question_1"
+                    style="@style/QuestionsStyle"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1.5"
-                    android:text="@string/inv_q_1" />
+                    android:text="@string/question_1" />
 
                 <LinearLayout
-                    style="@style/inventions_answers"
+                    style="@style/AnswersStyle"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1.5"
                     android:orientation="vertical">
 
                     <TextView
-                        android:id="@+id/inv_q1_player_answer"
-                        style="@style/inventions_tv_answers"
+                        android:id="@+id/tv_q1_player_answer"
+                        style="@style/TvAnswersStyle"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="@string/yourAnswer" />
+                        android:text="@string/your_answer" />
 
                     <View
-                        style="@style/inv_view_margins"
+                        style="@style/ViewMarginsStyle"
                         android:layout_width="match_parent" />
 
                     <TextView
-                        android:id="@+id/inv_q1_correct_answer"
-                        style="@style/inventions_tv_answers"
+                        android:id="@+id/tv_q1_correct_answer"
+                        style="@style/TvAnswersStyle"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="@string/invCorrectAnswer" />
+                        android:text="@string/inv_correct_answer" />
                 </LinearLayout>
             </LinearLayout>
 
             <TextView
-                android:id="@+id/inv_q1_comment"
-                style="@style/inventions_comment"
+                android:id="@+id/tv_q1_comment"
+                style="@style/QuestionCommentStyle"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="@string/inv_q1_info" />
+                android:text="@string/q_1_info" />
 
             <View
-                style="@style/inv_view_margins"
+                style="@style/ViewMarginsStyle"
                 android:layout_width="match_parent" />
 
             <TextView
-                android:id="@+id/inv_question2_number"
-                style="@style/inventions_question_number"
+                android:id="@+id/tv_question2_number"
+                style="@style/QuestionNumberStyle"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content" />
 
@@ -90,54 +90,54 @@
                 android:orientation="horizontal">
 
                 <TextView
-                    android:id="@+id/inv_q2_question"
-                    style="@style/inventions_questions"
+                    android:id="@+id/tv_question_2"
+                    style="@style/QuestionsStyle"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1.5"
-                    android:text="@string/inv_q_2" />
+                    android:text="@string/question_2" />
 
                 <LinearLayout
-                    style="@style/inventions_answers"
+                    style="@style/AnswersStyle"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1.5"
                     android:orientation="vertical">
 
                     <TextView
-                        android:id="@+id/inv_q2_player_answer"
-                        style="@style/inventions_tv_answers"
+                        android:id="@+id/tv_q2_player_answer"
+                        style="@style/TvAnswersStyle"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="@string/yourAnswer" />
+                        android:text="@string/your_answer" />
 
                     <View
-                        style="@style/inv_view_margins"
+                        style="@style/ViewMarginsStyle"
                         android:layout_width="match_parent" />
 
                     <TextView
-                        android:id="@+id/inv_q2_correct_answer"
-                        style="@style/inventions_tv_answers"
+                        android:id="@+id/tv_q2_correct_answer"
+                        style="@style/TvAnswersStyle"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="@string/invCorrectAnswer" />
+                        android:text="@string/inv_correct_answer" />
                 </LinearLayout>
             </LinearLayout>
 
             <TextView
-                android:id="@+id/inv_q2_comment"
-                style="@style/inventions_comment"
+                android:id="@+id/tv_q2_comment"
+                style="@style/QuestionCommentStyle"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="@string/inv_q2_info" />
+                android:text="@string/q_2_info" />
 
             <View
-                style="@style/inv_view_margins"
+                style="@style/ViewMarginsStyle"
                 android:layout_width="match_parent" />
 
             <TextView
-                android:id="@+id/inv_question3_number"
-                style="@style/inventions_question_number"
+                android:id="@+id/tv_question3_number"
+                style="@style/QuestionNumberStyle"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content" />
 
@@ -147,54 +147,54 @@
                 android:orientation="horizontal">
 
                 <TextView
-                    android:id="@+id/inv_q3_question"
-                    style="@style/inventions_questions"
+                    android:id="@+id/tv_question_3"
+                    style="@style/QuestionsStyle"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1.5"
-                    android:text="@string/inv_q_3" />
+                    android:text="@string/question_3" />
 
                 <LinearLayout
-                    style="@style/inventions_answers"
+                    style="@style/AnswersStyle"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1.5"
                     android:orientation="vertical">
 
                     <TextView
-                        android:id="@+id/inv_q3_player_answer"
-                        style="@style/inventions_tv_answers"
+                        android:id="@+id/tv_q3_player_answer"
+                        style="@style/TvAnswersStyle"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="@string/yourAnswer" />
+                        android:text="@string/your_answer" />
 
                     <View
-                        style="@style/inv_view_margins"
+                        style="@style/ViewMarginsStyle"
                         android:layout_width="match_parent" />
 
                     <TextView
-                        android:id="@+id/inv_q3_correct_answer"
-                        style="@style/inventions_tv_answers"
+                        android:id="@+id/tv_q3_correct_answer"
+                        style="@style/TvAnswersStyle"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="@string/invCorrectAnswer" />
+                        android:text="@string/inv_correct_answer" />
                 </LinearLayout>
             </LinearLayout>
 
             <TextView
-                android:id="@+id/inv_q3_comment"
-                style="@style/inventions_comment"
+                android:id="@+id/tv_q3_comment"
+                style="@style/QuestionCommentStyle"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="@string/inv_q3_info" />
+                android:text="@string/q_3_info" />
 
             <View
-                style="@style/inv_view_margins"
+                style="@style/ViewMarginsStyle"
                 android:layout_width="match_parent" />
 
             <TextView
-                android:id="@+id/inv_question4_number"
-                style="@style/inventions_question_number"
+                android:id="@+id/tv_question4_number"
+                style="@style/QuestionNumberStyle"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content" />
 
@@ -204,54 +204,54 @@
                 android:orientation="horizontal">
 
                 <TextView
-                    android:id="@+id/inv_q4_question"
-                    style="@style/inventions_questions"
+                    android:id="@+id/tv_question_4"
+                    style="@style/QuestionsStyle"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1.5"
-                    android:text="@string/inv_q_4" />
+                    android:text="@string/question_4" />
 
                 <LinearLayout
-                    style="@style/inventions_answers"
+                    style="@style/AnswersStyle"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1.5"
                     android:orientation="vertical">
 
                     <TextView
-                        android:id="@+id/inv_q4_player_answer"
-                        style="@style/inventions_tv_answers"
+                        android:id="@+id/tv_q4_player_answer"
+                        style="@style/TvAnswersStyle"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="@string/yourAnswer" />
+                        android:text="@string/your_answer" />
 
                     <View
-                        style="@style/inv_view_margins"
+                        style="@style/ViewMarginsStyle"
                         android:layout_width="match_parent" />
 
                     <TextView
-                        android:id="@+id/inv_q4_correct_answer"
-                        style="@style/inventions_tv_answers"
+                        android:id="@+id/tv_q4_correct_answer"
+                        style="@style/TvAnswersStyle"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="@string/invCorrectAnswer" />
+                        android:text="@string/inv_correct_answer" />
                 </LinearLayout>
             </LinearLayout>
 
             <TextView
-                android:id="@+id/inv_q4_comment"
-                style="@style/inventions_comment"
+                android:id="@+id/tv_q4_comment"
+                style="@style/QuestionCommentStyle"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="@string/inv_q4_info" />
+                android:text="@string/q_4_info" />
 
             <View
-                style="@style/inv_view_margins"
+                style="@style/ViewMarginsStyle"
                 android:layout_width="match_parent" />
 
             <TextView
-                android:id="@+id/inv_question5_number"
-                style="@style/inventions_question_number"
+                android:id="@+id/tv_question5_number"
+                style="@style/QuestionNumberStyle"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content" />
 
@@ -261,54 +261,54 @@
                 android:orientation="horizontal">
 
                 <TextView
-                    android:id="@+id/inv_q5_question"
-                    style="@style/inventions_questions"
+                    android:id="@+id/tv_question_5"
+                    style="@style/QuestionsStyle"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1.5"
-                    android:text="@string/inv_q_5" />
+                    android:text="@string/question_5" />
 
                 <LinearLayout
-                    style="@style/inventions_answers"
+                    style="@style/AnswersStyle"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1.5"
                     android:orientation="vertical">
 
                     <TextView
-                        android:id="@+id/inv_q5_player_answer"
-                        style="@style/inventions_tv_answers"
+                        android:id="@+id/tv_q5_player_answer"
+                        style="@style/TvAnswersStyle"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="@string/yourAnswer" />
+                        android:text="@string/your_answer" />
 
                     <View
-                        style="@style/inv_view_margins"
+                        style="@style/ViewMarginsStyle"
                         android:layout_width="match_parent" />
 
                     <TextView
-                        android:id="@+id/inv_q5_correct_answer"
-                        style="@style/inventions_tv_answers"
+                        android:id="@+id/tv_q5_correct_answer"
+                        style="@style/TvAnswersStyle"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="@string/invCorrectAnswer" />
+                        android:text="@string/inv_correct_answer" />
                 </LinearLayout>
             </LinearLayout>
 
             <TextView
-                android:id="@+id/inv_q5_comment"
-                style="@style/inventions_comment"
+                android:id="@+id/tv_q5_comment"
+                style="@style/QuestionCommentStyle"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="@string/inv_q5_info" />
+                android:text="@string/q_5_info" />
 
             <View
-                style="@style/inv_view_margins"
+                style="@style/ViewMarginsStyle"
                 android:layout_width="match_parent" />
 
             <TextView
-                android:id="@+id/inv_question6_number"
-                style="@style/inventions_question_number"
+                android:id="@+id/tv_question6_number"
+                style="@style/QuestionNumberStyle"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content" />
 
@@ -318,54 +318,54 @@
                 android:orientation="horizontal">
 
                 <TextView
-                    android:id="@+id/inv_q6_question"
-                    style="@style/inventions_questions"
+                    android:id="@+id/tv_question_6"
+                    style="@style/QuestionsStyle"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1.5"
-                    android:text="@string/inv_q_6" />
+                    android:text="@string/question_6" />
 
                 <LinearLayout
-                    style="@style/inventions_answers"
+                    style="@style/AnswersStyle"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1.5"
                     android:orientation="vertical">
 
                     <TextView
-                        android:id="@+id/inv_q6_player_answer"
-                        style="@style/inventions_tv_answers"
+                        android:id="@+id/tv_q6_player_answer"
+                        style="@style/TvAnswersStyle"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="@string/yourAnswer" />
+                        android:text="@string/your_answer" />
 
                     <View
-                        style="@style/inv_view_margins"
+                        style="@style/ViewMarginsStyle"
                         android:layout_width="match_parent" />
 
                     <TextView
-                        android:id="@+id/inv_q6_correct_answer"
-                        style="@style/inventions_tv_answers"
+                        android:id="@+id/tv_q6_correct_answer"
+                        style="@style/TvAnswersStyle"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="@string/invCorrectAnswer" />
+                        android:text="@string/inv_correct_answer" />
                 </LinearLayout>
             </LinearLayout>
 
             <TextView
-                android:id="@+id/inv_q6_comment"
-                style="@style/inventions_comment"
+                android:id="@+id/tv_q6_comment"
+                style="@style/QuestionCommentStyle"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="@string/inv_q6_info" />
+                android:text="@string/q_6_info" />
 
             <View
-                style="@style/inv_view_margins"
+                style="@style/ViewMarginsStyle"
                 android:layout_width="match_parent" />
 
             <TextView
-                android:id="@+id/inv_question7_number"
-                style="@style/inventions_question_number"
+                android:id="@+id/tv_question7_number"
+                style="@style/QuestionNumberStyle"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content" />
 
@@ -375,54 +375,54 @@
                 android:orientation="horizontal">
 
                 <TextView
-                    android:id="@+id/inv_q7_question"
-                    style="@style/inventions_questions"
+                    android:id="@+id/tv_question_7"
+                    style="@style/QuestionsStyle"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1.5"
-                    android:text="@string/inv_q_7" />
+                    android:text="@string/question_7" />
 
                 <LinearLayout
-                    style="@style/inventions_answers"
+                    style="@style/AnswersStyle"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1.5"
                     android:orientation="vertical">
 
                     <TextView
-                        android:id="@+id/inv_q7_player_answer"
-                        style="@style/inventions_tv_answers"
+                        android:id="@+id/tv_q7_player_answer"
+                        style="@style/TvAnswersStyle"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="@string/yourAnswer" />
+                        android:text="@string/your_answer" />
 
                     <View
-                        style="@style/inv_view_margins"
+                        style="@style/ViewMarginsStyle"
                         android:layout_width="match_parent" />
 
                     <TextView
-                        android:id="@+id/inv_q7_correct_answer"
-                        style="@style/inventions_tv_answers"
+                        android:id="@+id/tv_q7_correct_answer"
+                        style="@style/TvAnswersStyle"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="@string/invCorrectAnswer" />
+                        android:text="@string/inv_correct_answer" />
                 </LinearLayout>
             </LinearLayout>
 
             <TextView
-                android:id="@+id/inv_q7_comment"
-                style="@style/inventions_comment"
+                android:id="@+id/tv_q7_comment"
+                style="@style/QuestionCommentStyle"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="@string/inv_q7_info" />
+                android:text="@string/q_7_info" />
 
             <View
-                style="@style/inv_view_margins"
+                style="@style/ViewMarginsStyle"
                 android:layout_width="match_parent" />
 
             <TextView
-                android:id="@+id/inv_question8_number"
-                style="@style/inventions_question_number"
+                android:id="@+id/tv_question8_number"
+                style="@style/QuestionNumberStyle"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content" />
 
@@ -432,54 +432,54 @@
                 android:orientation="horizontal">
 
                 <TextView
-                    android:id="@+id/inv_q8_question"
-                    style="@style/inventions_questions"
+                    android:id="@+id/tv_question_8"
+                    style="@style/QuestionsStyle"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1.5"
-                    android:text="@string/inv_q_8" />
+                    android:text="@string/question_8" />
 
                 <LinearLayout
-                    style="@style/inventions_answers"
+                    style="@style/AnswersStyle"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1.5"
                     android:orientation="vertical">
 
                     <TextView
-                        android:id="@+id/inv_q8_player_answer"
-                        style="@style/inventions_tv_answers"
+                        android:id="@+id/tv_q8_player_answer"
+                        style="@style/TvAnswersStyle"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="@string/yourAnswer" />
+                        android:text="@string/your_answer" />
 
                     <View
-                        style="@style/inv_view_margins"
+                        style="@style/ViewMarginsStyle"
                         android:layout_width="match_parent" />
 
                     <TextView
-                        android:id="@+id/inv_q8_correct_answer"
-                        style="@style/inventions_tv_answers"
+                        android:id="@+id/tv_q8_correct_answer"
+                        style="@style/TvAnswersStyle"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="@string/invCorrectAnswer" />
+                        android:text="@string/inv_correct_answer" />
                 </LinearLayout>
             </LinearLayout>
 
             <TextView
-                android:id="@+id/inv_q8_comment"
-                style="@style/inventions_comment"
+                android:id="@+id/tv_q8_comment"
+                style="@style/QuestionCommentStyle"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="@string/inv_q8_info" />
+                android:text="@string/q_8_info" />
 
             <View
-                style="@style/inv_view_margins"
+                style="@style/ViewMarginsStyle"
                 android:layout_width="match_parent" />
 
             <TextView
-                android:id="@+id/inv_question9_number"
-                style="@style/inventions_question_number"
+                android:id="@+id/tv_question9_number"
+                style="@style/QuestionNumberStyle"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content" />
 
@@ -489,54 +489,54 @@
                 android:orientation="horizontal">
 
                 <TextView
-                    android:id="@+id/inv_q9_question"
-                    style="@style/inventions_questions"
+                    android:id="@+id/tv_question_9"
+                    style="@style/QuestionsStyle"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1.5"
-                    android:text="@string/inv_q_9" />
+                    android:text="@string/question_9" />
 
                 <LinearLayout
-                    style="@style/inventions_answers"
+                    style="@style/AnswersStyle"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1.5"
                     android:orientation="vertical">
 
                     <TextView
-                        android:id="@+id/inv_q9_player_answer"
-                        style="@style/inventions_tv_answers"
+                        android:id="@+id/tv_q9_player_answer"
+                        style="@style/TvAnswersStyle"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="@string/yourAnswer" />
+                        android:text="@string/your_answer" />
 
                     <View
-                        style="@style/inv_view_margins"
+                        style="@style/ViewMarginsStyle"
                         android:layout_width="match_parent" />
 
                     <TextView
-                        android:id="@+id/inv_q9_correct_answer"
-                        style="@style/inventions_tv_answers"
+                        android:id="@+id/tv_q9_correct_answer"
+                        style="@style/TvAnswersStyle"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="@string/invCorrectAnswer" />
+                        android:text="@string/inv_correct_answer" />
                 </LinearLayout>
             </LinearLayout>
 
             <TextView
-                android:id="@+id/inv_q9_comment"
-                style="@style/inventions_comment"
+                android:id="@+id/tv_q9_comment"
+                style="@style/QuestionCommentStyle"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="@string/inv_q9_info" />
+                android:text="@string/q_9_info" />
 
             <View
-                style="@style/inv_view_margins"
+                style="@style/ViewMarginsStyle"
                 android:layout_width="match_parent" />
 
             <TextView
-                android:id="@+id/inv_question10_number"
-                style="@style/inventions_question_number"
+                android:id="@+id/tv_question10_number"
+                style="@style/QuestionNumberStyle"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content" />
 
@@ -546,50 +546,50 @@
                 android:orientation="horizontal">
 
                 <TextView
-                    android:id="@+id/inv_q10_question"
-                    style="@style/inventions_questions"
+                    android:id="@+id/tv_question_10"
+                    style="@style/QuestionsStyle"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1.5"
-                    android:text="@string/inv_q_10" />
+                    android:text="@string/question_10" />
 
                 <LinearLayout
-                    style="@style/inventions_answers"
+                    style="@style/AnswersStyle"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1.5"
                     android:orientation="vertical">
 
                     <TextView
-                        android:id="@+id/inv_q10_player_answer"
-                        style="@style/inventions_tv_answers"
+                        android:id="@+id/tv_q10_player_answer"
+                        style="@style/TvAnswersStyle"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="@string/yourAnswer" />
+                        android:text="@string/your_answer" />
 
                     <View
-                        style="@style/inv_view_margins"
+                        style="@style/ViewMarginsStyle"
                         android:layout_width="match_parent" />
 
                     <TextView
-                        android:id="@+id/inv_q10_correct_answer"
-                        style="@style/inventions_tv_answers"
+                        android:id="@+id/tv_q10_correct_answer"
+                        style="@style/TvAnswersStyle"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="@string/invCorrectAnswer" />
+                        android:text="@string/inv_correct_answer" />
                 </LinearLayout>
             </LinearLayout>
 
             <TextView
-                android:id="@+id/inv_q10_comment"
-                style="@style/inventions_comment"
+                android:id="@+id/tv_q10_comment"
+                style="@style/QuestionCommentStyle"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="@string/inv_q10_info" />
+                android:text="@string/q_10_info" />
 
             <Button
-                android:id="@+id/button_to_main"
-                style="@style/inventions_buttons"
+                android:id="@+id/btn_home"
+                style="@style/ButtonsStyle"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_horizontal"

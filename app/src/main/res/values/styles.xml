@@ -10,57 +10,22 @@
     </style>
 
     <!-- Name field margins-->
-    <style name="name_field_margins">
+    <style name="NameFieldMargins">
         <item name="android:layout_marginLeft">@dimen/layout_margin1</item>
         <item name="android:layout_marginRight">@dimen/layout_margin1</item>
         <item name="android:gravity">bottom</item>
     </style>
 
     <!-- Quiz night margins-->
-    <style name="quiz_night_margins">
+    <style name="QuizNightMargins">
         <item name="android:layout_marginTop">@dimen/layout_margin4</item>
         <item name="android:scaleType">centerInside</item>
-    </style>
-
-    <!-- TextView margins-->
-    <style name="TextView_margins">
-        <item name="android:layout_marginLeft">@dimen/layout_margin1</item>
-        <item name="android:layout_marginRight">@dimen/layout_margin1</item>
-        <item name="android:layout_marginTop">@dimen/layout_margin4</item>
-        <item name="android:layout_marginBottom">@dimen/layout_margin4</item>
-        <item name="android:layout_gravity">center_horizontal</item>
-        <item name="android:textSize">@dimen/text_size</item>
-        <item name="android:fontFamily">@font/quiz_font1</item>
-    </style>
-
-    <!-- TextView questions style-->
-    <style name="TextView_questions">
-        <item name="android:layout_margin">@dimen/layout_margin3</item>
-        <item name="android:textSize">@dimen/text_size2</item>
-        <item name="android:textColor">@color/questions_color</item>
-        <item name="android:gravity">center</item>
-        <item name="android:background">@color/ny_image_background</item>
-        <item name="android:fontFamily">sans-serif</item>
-    </style>
-
-    <!-- RadioButtons style-->
-    <style name="RadioButtons">
-        <item name="android:layout_marginLeft">@dimen/layout_margin1</item>
-        <item name="android:layout_marginRight">@dimen/layout_margin1</item>
-        <item name="android:background">@color/ny_image_background</item>
-    </style>
-
-    <!-- Category layout-->
-    <style name="category_layout">
-        <item name="android:layout_marginLeft">@dimen/padding1</item>
-        <item name="android:layout_marginRight">@dimen/padding1</item>
-        <item name="android:layout_gravity">center_horizontal</item>
     </style>
 
     <!--INVENTIONS QUIZ STYLES-->
 
     <!-- Inventions header-->
-    <style name="inventions_header">
+    <style name="HeaderStyle">
         <item name="android:layout_marginBottom">@dimen/padding1</item>
         <item name="android:layout_marginTop">@dimen/padding1</item>
         <item name="android:fontFamily">@font/theroots</item>
@@ -71,7 +36,7 @@
     </style>
 
     <!-- Inventions question number-->
-    <style name="inventions_question_number">
+    <style name="QuestionNumberStyle">
         <item name="android:layout_marginBottom">@dimen/padding1</item>
         <item name="android:layout_marginTop">@dimen/layout_margin3</item>
         <item name="android:fontFamily">@font/quiz_font1</item>
@@ -81,7 +46,7 @@
     </style>
 
     <!-- Inventions questions style-->
-    <style name="inventions_questions">
+    <style name="QuestionsStyle">
         <item name="android:textSize">@dimen/text_size2</item>
         <item name="android:textColor">@color/ny_Accent</item>
         <item name="android:layout_gravity">left|center_vertical</item>
@@ -93,19 +58,19 @@
     </style>
 
     <!-- Inventions answers style-->
-    <style name="inventions_answers">
+    <style name="AnswersStyle">
         <item name="android:layout_gravity">left|center_vertical</item>
         <item name="android:fontFamily">sans-serif-condensed-light</item>
     </style>
 
     <!-- Inventions TextView answer/question style-->
-    <style name="inventions_tv_answers">
+    <style name="TvAnswersStyle">
         <item name="android:padding">@dimen/padding1</item>
         <item name="android:textStyle">bold</item>
     </style>
 
     <!-- Inventions comments style-->
-    <style name="inventions_comment">
+    <style name="QuestionCommentStyle">
         <item name="android:textSize">@dimen/text_size2</item>
         <item name="android:textColor">@color/ny_Accent</item>
         <item name="android:layout_gravity">left|center_vertical</item>
@@ -117,7 +82,7 @@
     </style>
 
     <!-- Inventions buttons style-->
-    <style name="inventions_buttons">
+    <style name="ButtonsStyle">
         <item name="android:background">@drawable/inv_borders</item>
         <item name="android:layout_marginLeft">@dimen/padding2</item>
         <item name="android:layout_marginRight">@dimen/padding2</item>
@@ -129,7 +94,7 @@
     </style>
 
     <!-- Inventions category button style-->
-    <style name="inv_category_button" parent="Widget.AppCompat.Button.Borderless">
+    <style name="CategoryButtonStyle" parent="Widget.AppCompat.Button.Borderless">
         <item name="android:layout_margin">@dimen/layout_margin2</item>
         <item name="android:background">@drawable/borders</item>
         <item name="android:layout_gravity">center</item>
@@ -137,14 +102,14 @@
     </style>
 
     <!-- Inventions RadioButtons style-->
-    <style name="inventions_rb">
+    <style name="RadioButtonStyle">
         <item name="android:layout_marginLeft">@dimen/layout_margin5</item>
         <item name="android:layout_marginRight">@dimen/layout_margin1</item>
         <item name="android:layout_marginBottom">@dimen/padding1</item>
     </style>
 
     <!-- Inventions view margins-->
-    <style name="inv_view_margins">
+    <style name="ViewMarginsStyle">
         <item name="android:layout_marginTop">@dimen/padding2</item>
         <item name="android:layout_marginBottom">@dimen/padding2</item>
         <item name="android:background">@color/inv_view</item>

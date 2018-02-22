@@ -8,20 +8,20 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
         android:background="@drawable/gradient"
         android:orientation="vertical">
 
         <ImageView
-            style="@style/quiz_night_margins"
+            style="@style/QuizNightMargins"
             android:layout_width="match_parent"
             android:layout_height="0dp"
             android:layout_weight="3"
             android:src="@drawable/quiz_night" />
 
         <EditText
-            android:id="@+id/name"
-            style="@style/name_field_margins"
+            android:id="@+id/et_name"
+            style="@style/NameFieldMargins"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
@@ -29,7 +29,7 @@
             android:inputType="textCapWords" />
 
         <ImageButton
-            style="@style/inv_category_button"
+            style="@style/CategoryButtonStyle"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="0"
